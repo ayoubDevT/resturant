@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)https://s0.2mdn.net/3797665/1555948306239/Privacy2_300x250_v2.2/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="ad.size" content="width=300,height=250">
+	<link rel="StyleSheet" href="./styles.css" type="text/css">
+	<script src="./tweenmax_2.0.1_min.js.téléchargement"></script>
+	<script src="./jquery.min.js.téléchargement"></script>
+	<script src="./animation.js.téléchargement"></script>
+	<script type="text/javascript">
+		var clickTag = "http://www.google.com"; 
+	</script>
+<script type="text/javascript">
+    
+      (function() {
+        var relegateNavigation = '';
+        var handleClickTagMessage = function(e) {
+          try {
+            var eventData = JSON.parse(e.data);
+          } catch (err) {
+            return;
+          }
+          if (eventData.isInitClickTag) {
+            if (eventData.clickTags) {
+              for (var i = 0; i < eventData.clickTags.length; i++) {
+                var clkTag = eventData.clickTags[i];
+                window[clkTag.name] = clkTag.url;
+              }
+            } else if (eventData.clickTag) {
+              window.clickTag = eventData.clickTag;
+            }
+            relegateNavigation = eventData.relegateNavigation;
+          }
+        };
+
+        if (open.call) {
+          window.open = function(open) {
+            return function(url, name, features) {
+              if (relegateNavigation === 'parent') {
+                var message = {'clickTag': url, 'isPostClickTag': true};
+                parent.postMessage(JSON.stringify(message), '*');
+              } else {
+                var args = [url, name];
+                if (features) {
+                  args.push(features);
+                }
+                open.apply(window, args);
+              }
+            };
+          }(window.open);
+        }
+
+        if (window.addEventListener) {
+          window.addEventListener(
+              'message', handleClickTagMessage, false);
+        } else {
+          window.attachEvent('onmessage', handleClickTagMessage);
+        }
+      })();
+    
+  </script></head>
+
+<body onload="init()">
+	<div id="container_dc" style="display: block;">
+		<div id="content_dc">
+				<div id="bg" class="full_div">
+
+				</div>			
+				<div id="logo" class="full_div"><img src="./logo.png" width="300" height="250"></div>
+				<div id="cta" class="full_div"><img src="./cta.png" width="300" height="250"></div>
+				<div id="cta_copy" class="full_div"><img src="./cta_copy.png" width="300" height="250"></div>
+				
+				<div id="copy1" class="full_div" style="visibility: hidden; opacity: 0;">
+					<div id="copy1a" class="text1 full_div" style="visibility: inherit; opacity: 1;"><img src="./copy1a.png" width="300" height="250"></div>			
+					<div id="copy1b" class="text1 full_div" style="visibility: inherit; opacity: 1;"><img src="./copy1b.png" width="300" height="250"></div>			
+				</div>
+				<div id="copy2" class="full_div" style="visibility: hidden; opacity: 0;">
+					<div id="copy2a" class="text1 full_div" style="visibility: inherit; opacity: 1;"><img src="./copy2a.png" width="300" height="250"></div>			
+					<div id="copy2b" class="text1 full_div" style="visibility: inherit; opacity: 1;"><img src="./copy2b.png" width="300" height="250"></div>			
+				</div>
+				<div id="copy3" class="full_div">
+					<div id="copy3a" class="text1 full_div" style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><img src="./copy3a.png" width="300" height="250"></div>			
+					<div id="copy3b" class="text1 full_div" style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><img src="./copy3b.png" width="300" height="250"></div>			
+					<div id="copy3c" class="text2 full_div" style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><img src="./copy3c.png" width="300" height="250"></div>	
+				</div>
+				<div id="anim_container" class="full_div" style="visibility: hidden; opacity: 0;">
+					<div id="anim_bg" class="full_div" style="transform: matrix(1, 0, 0, 1, -50, 0);"><img src="./anim_bg.jpg" width="350" height="250"></div>			
+					<div id="main_img" class="full_div">
+						<div id="img_container" class="full_div" style="transform: matrix(0.86602, -0.49999, 0.49999, 0.86602, -30, 10); transform-origin: 50% 70% 0px;">
+							<div id="img_butterfly" class="full_div" style="transform: matrix(1, 0, 0, 1, -2700, 0);"><img src="./img_butterfly.png" width="3000" height="250"></div>
+						</div>
+						<div id="img_dot_container1" class="full_div" style="visibility: inherit; opacity: 0.15;">
+
+						
+						<div class="dot_class" style="background-image: url(&quot;img_dot.png&quot;); background-repeat: no-repeat; visibility: inherit; opacity: 1; transform: matrix3d(-0.0643198, 0.0814905, 0, 0, -0.0376233, -0.0296958, 0.092089, 0, 0.696285, 0.549573, 0.461689, 0, -656.975, 341.111, 0, 1);"></div><div class="dot_class" style="background-image: url(&quot;img_dot.png&quot;); background-repeat: no-repeat; visibility: inherit; opacity: 1; transform: matrix3d(-0.223631, 0.0813559, 0, 0, -0.0347991, -0.0956557, 0.215102, 0, 0.309022, 0.849438, 0.427739, 0, -649.101, 87.4545, 0, 1);"></div><div class="dot_class" style="background-image: url(&quot;img_dot.png&quot;); background-repeat: no-repeat; visibility: inherit; opacity: 1; transform: matrix3d(-0.19008, -0.139139, 0, 0, 0.0261373, -0.0357066, 0.23137, 0, -0.580149, 0.792552, 0.18785, 0, -675.755, -205.286, 0, 1);"></div><div class="dot_class" style="background-image: url(&quot;img_dot.png&quot;); background-repeat: no-repeat; visibility: inherit; opacity: 1; transform: matrix3d(-0.147933, 0.156081, 0, 0, -0.148104, -0.140373, 0.0678682, 0, 0.229059, 0.217101, 0.948894, 0, -691.494, 269.18, 0, 1);"></div><div class="dot_class" style="background-image: url(&quot;img_dot.png&quot;); background-repeat: no-repeat; visibility: inherit; opacity: 1; transform: matrix3d(-0.190509, -0.010733, 0, 0, 0.0074293, -0.131869, 0.137712, 0, -0.0405961, 0.720573, 0.69219, 0, -717.44, -14.8861, 0, 1);"></div><div class="dot_class" style="background-image: url(&quot;img_dot.png&quot;); background-repeat: no-repeat; visibility: inherit; opacity: 1; transform: matrix3d(-0.16976, -0.0657497, 0, 0, 0.050324, -0.129932, 0.117161, 0, -0.232436, 0.60013, 0.765387, 0, -689.605, -102.467, 0, 1);"></div><div class="dot_class" style="background-image: url(&quot;img_dot.png&quot;); background-repeat: no-repeat; visibility: inherit; opacity: 1; transform: matrix3d(-0.146206, -0.174376, 0, 0, 0.0710299, -0.0595554, 0.207825, 0, -0.699833, 0.586779, 0.407338, 0, -619.993, -254.176, 0, 1);"></div><div class="dot_class" style="background-image: url(&quot;img_dot.png&quot;); background-repeat: no-repeat; visibility: inherit; opacity: 1; transform: matrix3d(-0.111909, 0.0180789, 0, 0, -0.0140259, -0.0868209, 0.0715258, 0, 0.100627, 0.622884, 0.775815, 0, -761.813, 49.8286, 0, 1);"></div><div class="dot_class" style="background-image: url(&quot;img_dot.png&quot;); background-repeat: no-repeat; visibility: inherit; opacity: 1; transform: matrix3d(-0.102271, -0.110328, 0, 0, 0.0705249, -0.0653747, 0.115689, 0, -0.563979, 0.522793, 0.63923, 0, -654.034, -291.154, 0, 1);"></div><div class="dot_class" style="background-image: url(&quot;img_dot.png&quot;); background-repeat: no-repeat; visibility: inherit; opacity: 1; transform: matrix3d(-0.175624, -0.144156, 0, 0, 0.13822, -0.168392, 0.0645299, 0, -0.180193, 0.219526, 0.958822, 0, -767.382, -252.057, 0, 1);"></div><div class="dot_class" style="background-image: url(&quot;img_dot.png&quot;); background-repeat: no-repeat; visibility: inherit; opacity: 1; transform: matrix3d(-0.169193, 0.182398, 0, 0, -0.172641, -0.160142, 0.0802812, 0, 0.23658, 0.219451, 0.946505, 0, -756.974, 344.398, 0, 1);"></div><div class="dot_class" style="background-image: url(&quot;img_dot.png&quot;); background-repeat: no-repeat; visibility: inherit; opacity: 1; transform: matrix3d(-0.1721, 0.0418776, 0, 0, -0.0277402, -0.114001, 0.132689, 0, 0.177122, 0.7279, 0.662412, 0, -720.069, 72.9096, 0, 1);"></div><div class="dot_class" style="background-image: url(&quot;img_dot.png&quot;); background-repeat: no-repeat; visibility: inherit; opacity: 1; transform: matrix3d(-0.0676506, 0.0909248, 0, 0, -0.0721937, -0.0537141, 0.0688969, 0, 0.487736, 0.362889, 0.793993, 0, -735.509, 378.94, 0, 1);"></div><div class="dot_class" style="background-image: url(&quot;img_dot.png&quot;); background-repeat: no-repeat; visibility: inherit; opacity: 1; transform: matrix3d(-0.118527, -0.108641, 0, 0, 0.0903403, -0.0985612, 0.0893071, 0, -0.375313, 0.409466, 0.831551, 0, -723.396, -242.909, 0, 1);"></div><div class="dot_class" style="background-image: url(&quot;img_dot.png&quot;); background-repeat: no-repeat; visibility: inherit; opacity: 1; transform: matrix3d(-0.0828615, -0.0889464, 0, 0, 0.0787687, -0.0733801, 0.0564653, 0, -0.339867, 0.316617, 0.885576, 0, -659.5, -300.155, 0, 1);"></div><div class="dot_class" style="background-image: url(&quot;img_dot.png&quot;); background-repeat: no-repeat; visibility: inherit; opacity: 1; transform: matrix3d(-0.141068, -0.100166, 0, 0, 0.0857422, -0.120755, 0.0894423, 0, -0.299299, 0.421518, 0.856004, 0, -612.603, -160.316, 0, 1);"></div><div class="dot_class" style="background-image: url(&quot;img_dot.png&quot;); background-repeat: no-repeat; visibility: inherit; opacity: 1; transform: matrix3d(-0.0994254, 0.110891, 0, 0, -0.0827868, -0.0742268, 0.099091, 0, 0.495365, 0.444145, 0.746558, 0, -685.493, 295.774, 0, 1);"></div><div class="dot_class" style="background-image: url(&quot;img_dot.png&quot;); background-repeat: no-repeat; visibility: inherit; opacity: 1; transform: matrix3d(-0.134323, -0.12234, 0, 0, 0.103146, -0.113248, 0.0977014, 0, -0.362099, 0.397566, 0.843105, 0, -739.268, -274.803, 0, 1);"></div><div class="dot_class" style="background-image: url(&quot;img_dot.png&quot;); background-repeat: no-repeat; visibility: inherit; opacity: 1; transform: matrix3d(-0.0892484, -0.115464, 0, 0, 0.023428, -0.0181088, 0.1429, 0, -0.77474, 0.598838, 0.202903, 0, -750.251, -360.469, 0, 1);"></div><div class="dot_class" style="background-image: url(&quot;img_dot.png&quot;); background-repeat: no-repeat; visibility: inherit; opacity: 1; transform: matrix3d(-0.172274, 0.0496209, 0, 0, -0.00861666, -0.0299153, 0.176554, 0, 0.272577, 0.946334, 0.17365, 0, -786.436, 94.0709, 0, 1);"></div><div class="dot_class" style="background-image: url(&quot;img_dot.png&quot;); background-repeat: no-repeat; visibility: inherit; opacity: 1; transform: matrix3d(-0.140224, 0.135754, 0, 0, -0.0238918, -0.0246784, 0.192125, 0, 0.684706, 0.707251, 0.175993, 0, -761.961, 273.741, 0, 1);"></div><div class="dot_class" style="background-image: url(&quot;img_dot.png&quot;); background-repeat: no-repeat; visibility: inherit; opacity: 1; transform: matrix3d(-0.128498, 0.102854, 0, 0, -0.0666912, -0.0833189, 0.125303, 0, 0.475733, 0.594345, 0.648407, 0, -725.44, 226.862, 0, 1);"></div><div class="dot_class" style="background-image: url(&quot;img_dot.png&quot;); background-repeat: no-repeat; visibility: inherit; opacity: 1; transform: matrix3d(-0.1724, -0.0306933, 0, 0, 0.00310766, -0.0174553, 0.174212, 0, -0.174378, 0.97946, 0.101249, 0, -704.705, -47.0516, 0, 1);"></div><div class="dot_class" style="background-image: url(&quot;img_dot.png&quot;); background-repeat: no-repeat; visibility: inherit; opacity: 1; transform: matrix3d(-0.161854, 0.0472112, 0, 0, -0.0338519, -0.116054, 0.11752, 0, 0.195186, 0.669156, 0.717031, 0, -744.849, 87.6471, 0, 1);"></div><div class="dot_class" style="background-image: url(&quot;img_dot.png&quot;); background-repeat: no-repeat; visibility: inherit; opacity: 1; transform: matrix3d(-0.181518, -0.115165, 0, 0, 0.00967968, -0.0152567, 0.214209, 0, -0.533832, 0.841403, 0.0840506, 0, -729.645, -178.209, 0, 1);"></div><div class="dot_class" style="background-image: url(&quot;img_dot.png&quot;); background-repeat: no-repeat; visibility: inherit; opacity: 1; transform: matrix3d(-0.156163, 0.0816844, 0, 0, -0.0370768, -0.070883, 0.157036, 0, 0.412996, 0.789561, 0.453903, 0, -665.432, 145.408, 0, 1);"></div><div class="dot_class" style="background-image: url(&quot;img_dot.png&quot;); background-repeat: no-repeat; visibility: inherit; opacity: 1; transform: matrix3d(-0.145226, 0.117511, 0, 0, -0.0636335, -0.0786416, 0.157053, 0, 0.528818, 0.65354, 0.541513, 0, -734.889, 235.056, 0, 1);"></div><div class="dot_class" style="background-image: url(&quot;img_dot.png&quot;); background-repeat: no-repeat; visibility: inherit; opacity: 1; transform: matrix3d(-0.114175, -0.140628, 0, 0, 0.0293602, -0.0238373, 0.177149, 0, -0.759237, 0.616418, 0.20878, 0, -652.985, -315.635, 0, 1);"></div><div class="dot_class" style="background-image: url(&quot;img_dot.png&quot;); background-repeat: no-repeat; visibility: inherit; opacity: 1; transform: matrix3d(-0.12638, -0.153707, 0, 0, 0.0788396, -0.0648229, 0.170821, 0, -0.663081, 0.545193, 0.512922, 0, -722.118, -350.255, 0, 1);"></div><div class="dot_class" style="background-image: url(&quot;img_dot.png&quot;); background-repeat: no-repeat; visibility: inherit; opacity: 1; transform: matrix3d(-0.0926638, -0.113285, 0, 0, 0.0595667, -0.0487238, 0.12449, 0, -0.658396, 0.538549, 0.525813, 0, -617.095, -300.134, 0, 1);"></div></div>
+					</div>	
+					
+					<div id="scrub_base" class="full_div"><img src="./scrub_base.png" width="300" height="250"></div>								
+					<div id="scrub_bar" class="full_div" style="transform: matrix(0.8, 0, 0, 1, 0, 0); transform-origin: 28px 100% 0px;"><img src="./scrub_bar.png" width="300" height="250"></div>	
+							
+				</div>			
+			
+	
+				
+			
+		</div>   
+		<div id="border_div" class="full_div"></div>
+		<div id="bgFade" class="full_div" style="visibility: hidden; opacity: 0; display: none;"></div>
+		<a id="background_exit_dc" onclick="javascript:window.open(window.clickTag)" target="_blank"></a>
+	</div>
+
+
+</body></html>

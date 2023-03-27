@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)https://www.phpzag.com/push-notification-system-with-php-mysql/ -->
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en-US" style=""><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="https://gmpg.org/xfn/11">
+<link rel="pingback" href="https://www.phpzag.com/xmlrpc.php">
+<script src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/amp4ads-host-v0.js.téléchargement"></script><script async="" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/analytics.js.téléchargement"></script><script src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/f(7).txt"></script><script src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/sdk.js.téléchargement" async="" crossorigin="anonymous"></script><script src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/osd.js.téléchargement"></script><script src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/ca-pub-1169273815439326.js.téléchargement"></script><script id="facebook-jssdk" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/sdk.js(1).téléchargement"></script><script type="text/javascript" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/jquery.min.js(1).téléchargement"></script>
+<title>Push Notification System with PHP &amp; MySQL – PHPZAG.COM</title>
+<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="PHPZAG.COM » Feed" href="https://www.phpzag.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="PHPZAG.COM » Comments Feed" href="https://www.phpzag.com/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="PHPZAG.COM » Push Notification System with PHP &amp; MySQL Comments Feed" href="https://www.phpzag.com/push-notification-system-with-php-mysql/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.phpzag.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.2.1"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/wp-emoji-release.min.js.téléchargement" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-pagenavi-css" href="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/pagenavi-css.css" type="text/css" media="all">
+<link rel="stylesheet" id="opanda-lockers-css" href="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/lockers.020307.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="sparkling-bootstrap-css" href="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/bootstrap.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="sparkling-icons-css" href="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/font-awesome.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="sparkling-fonts-css" href="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/css(1)" type="text/css" media="all">
+<link rel="stylesheet" id="sparkling-style-css" href="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/style.css" type="text/css" media="all">
+<script type="text/javascript" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/jquery.js.téléchargement"></script>
+<script type="text/javascript" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/jquery-migrate.min.js.téléchargement"></script>
+<script type="text/javascript" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/modernizr.min.js.téléchargement"></script>
+<script type="text/javascript" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/bootstrap.min.js.téléchargement"></script>
+<script type="text/javascript" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/functions.min.js.téléchargement"></script>
+<link rel="https://api.w.org/" href="https://www.phpzag.com/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.phpzag.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.phpzag.com/wp-includes/wlwmanifest.xml"> 
+<link rel="prev" title="Star Rating System with Ajax, PHP and MySQL" href="https://www.phpzag.com/star-rating-system-with-ajax-php-and-mysql/">
+<link rel="next" title="Generate User Initial Avatar with PHP &amp; MySQL" href="https://www.phpzag.com/generate-user-initial-avatar-with-php-mysql/">
+<meta name="generator" content="WordPress 5.2.1">
+<link rel="canonical" href="https://www.phpzag.com/push-notification-system-with-php-mysql/">
+<link rel="shortlink" href="https://www.phpzag.com/?p=5852">
+<link rel="alternate" type="application/json+oembed" href="https://www.phpzag.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.phpzag.com%2Fpush-notification-system-with-php-mysql%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://www.phpzag.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.phpzag.com%2Fpush-notification-system-with-php-mysql%2F&amp;format=xml">
+<style type="text/css">a, #infinite-handle span, #secondary .widget .post-content a {color:#dd5656}a:hover, a:active, #secondary .widget .post-content a:hover,
+        .woocommerce nav.woocommerce-pagination ul li a:focus, .woocommerce nav.woocommerce-pagination ul li a:hover,
+        .woocommerce nav.woocommerce-pagination ul li span.current  {color: #6d87cf;}.btn-default, .label-default, .flex-caption h2, .btn.btn-default.read-more,button,
+              .navigation .wp-pagenavi-pagination span.current,.navigation .wp-pagenavi-pagination a:hover,
+              .woocommerce a.button, .woocommerce button.button,
+              .woocommerce input.button, .woocommerce #respond input#submit.alt,
+              .woocommerce a.button, .woocommerce button.button,
+              .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt { background-color: #6d87cf; border-color: #6d87cf;}.site-main [class*="navigation"] a, .more-link, .pagination>li>a, .pagination>li>span { color: #6d87cf}.btn-default:hover, .label-default[href]:hover, .tagcloud a:hover,button, .main-content [class*="navigation"] a:hover,.label-default[href]:focus, #infinite-handle span:hover,.btn.btn-default.read-more:hover, .btn-default:hover, .scroll-to-top:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .site-main [class*="navigation"] a:hover, .more-link:hover, #image-navigation .nav-previous a:hover, #image-navigation .nav-next a:hover, .cfa-button:hover,.woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover,.woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover{ background-color: #b7bdce; border-color: #b7bdce; }.pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {color: #b7bdce;}.cfa { background-color: #598fbf; } .cfa-button:hover a {color: #598fbf;}.cfa-text { color: #ffffff;}.cfa-button {border-color: ; color: #ffffff;}h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .entry-title {color: #6d87cf;}.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus { color: #6d87cf;}.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {color: #ffffff;}#footer-area, .site-info {color: #ffffff;}.entry-content {font-family: Open Sans; font-size:14px; font-weight: normal; color:#6B6B6B;}</style>	<style type="text/css">
+			.navbar > .container .navbar-brand {
+			color: #6d87cf;
+		}
+		</style>
+	        <!-- 
+            Lockers: Facebook SDK
+            OnePress, bizpanda.com
+        -->
+        <script>
+            window.fbAsyncInitPredefined = window.fbAsyncInit;
+            window.fbAsyncInit = function() {
+                window.FB.init({
+                    appId: 117100935120196,
+                    status: true,
+                    cookie: true,
+                    xfbml: true,
+                    version: 'v2.5'
+                });
+                window.FB.init = function(){};
+                window.fbAsyncInitPredefined && window.fbAsyncInitPredefined();
+            };
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/en_US/sdk.js?";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+        <!-- / -->   
+        
+<script async="" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/f(8).txt"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-1169273815439326",
+          enable_page_level_ads: true
+     });
+</script>
+
+<link rel="preload" href="https://adservice.google.com/adsid/integrator.js?domain=www.phpzag.com" as="script"><script type="text/javascript" src="https://adservice.google.com/adsid/integrator.js?domain=www.phpzag.com"></script><link rel="preload" href="https://pagead2.googlesyndication.com/pagead/js/r20190522/r20190131/show_ads_impl.js" as="script"><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#1d3c78;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}</style><script charset="utf-8" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/button.dd024c345fc26f7c7a8d9938b67e5d3d.js.téléchargement"></script><link rel="stylesheet" type="text/css" href="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/prettify.css"></head><body class="post-template-default single single-post postid-5852 single-format-standard">
+<a class="sr-only sr-only-focusable" href="https://www.phpzag.com/push-notification-system-with-php-mysql/#content">Skip to main content</a>
+<div id="page" class="hfeed site">
+
+	<header id="masthead" class="site-header" role="banner">
+		<nav class="navbar navbar-default " role="navigation">
+			<div class="container">
+				<div class="row">
+					<div class="site-navigation-inner col-sm-12">
+						<div class="navbar-header">
+							<button type="button" class="btn navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+
+							
+							<div id="logo">
+								<a href="https://www.phpzag.com/"><img src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/cropped-coollogo_com-7816453-2.png" height="88" width="449" alt="PHPZAG.COM"></a>
+							</div><!-- end of #logo -->
+
+							
+							
+						</div>
+						<div class="collapse navbar-collapse navbar-ex1-collapse"><ul id="menu-tutorials" class="nav navbar-nav"><li id="menu-item-3306" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-3306"><a title="Home" href="https://www.phpzag.com/">Home</a></li>
+<li id="menu-item-5899" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor menu-item-has-children menu-item-5899 dropdown"><a title="Tutorials" href="https://www.phpzag.com/category/tutorials/" data-toggle="dropdown" class="dropdown-toggle">Tutorials <span class="caret"></span></a>
+<ul role="menu" class=" dropdown-menu">
+	<li id="menu-item-5907" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-5907"><a title="PHP" href="https://www.phpzag.com/category/tutorials/php-tutorial-2/">PHP</a></li>
+	<li id="menu-item-5909" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5909"><a title="Laravel" href="https://www.phpzag.com/category/tutorials/laravel/">Laravel</a></li>
+	<li id="menu-item-5900" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5900"><a title="AngularJS" href="https://www.phpzag.com/category/tutorials/angularjs/">AngularJS</a></li>
+	<li id="menu-item-3619" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3619"><a title="Wordpress" href="https://www.phpzag.com/category/tutorials/wordpress/">WordPress</a></li>
+	<li id="menu-item-5901" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5901"><a title="HTML5" href="https://www.phpzag.com/category/tutorials/html5-tutorial/">HTML5</a></li>
+	<li id="menu-item-3618" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3618"><a title="Magento" href="https://www.phpzag.com/category/tutorials/magento/">Magento</a></li>
+	<li id="menu-item-5902" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5902"><a title="Javascript" href="https://www.phpzag.com/category/tutorials/javascript-2/">Javascript</a></li>
+	<li id="menu-item-5903" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5903"><a title="JQuery" href="https://www.phpzag.com/category/tutorials/jquery/">JQuery</a></li>
+	<li id="menu-item-5904" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5904"><a title="Magento" href="https://www.phpzag.com/category/tutorials/magento/">Magento</a></li>
+	<li id="menu-item-5905" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5905"><a title="MYSQL" href="https://www.phpzag.com/category/tutorials/mysql/">MYSQL</a></li>
+	<li id="menu-item-5908" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5908"><a title="Wordpress" href="https://www.phpzag.com/category/tutorials/wordpress/">WordPress</a></li>
+	<li id="menu-item-5906" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5906"><a title="Payment Gateways" href="https://www.phpzag.com/category/tutorials/payment-gateways/">Payment Gateways</a></li>
+</ul>
+</li>
+<li id="menu-item-3677" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3677"><a title="Object Oriented Programming in PHP" href="https://www.phpzag.com/object-oriented-programming-with-php/"><span class="glyphicon Object Oriented Programming in PHP"></span>&nbsp;OOP</a></li>
+<li id="menu-item-4131" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4131"><a title="Free PHP script live demos" href="https://www.phpzag.com/php-free-script-live-demo/"><span class="glyphicon Free PHP script live demos"></span>&nbsp;<span style="color:#FF6600;font-style: italic;font-weight:bold;">Live Demos</span></a></li>
+<li id="menu-item-3865" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3865"><a title="Interview Questions and Answers for PHP, HTML, Mysql, jQuery, Magento and WordPress" href="https://www.phpzag.com/category/interview-questions/"><span class="glyphicon Interview Questions and Answers for PHP, HTML, Mysql, jQuery, Magento and WordPress"></span>&nbsp;Interview</a></li>
+</ul></div>					</div>
+				</div>
+			</div>
+		</nav><!-- .site-navigation -->
+	</header><!-- #masthead -->
+
+	<div id="content" class="site-content">
+		<div class="top-section">
+								</div>
+
+		<div class="container main-content-area">	
+		
+		  
+			<!-- Responsive Header adss -->
+					   
+            			<div style="margin-top:10px;" class="row pull-left">			
+				<div class="main-content-inner col-sm-12 col-md-8">
+				
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+		
+			
+<article id="post-5852" class="post-5852 post type-post status-publish format-standard hentry category-php-tutorial-2">
+		<div class="post-inner-content">
+		<header class="entry-header page-header">
+
+			<h1 class="entry-title ">Push Notification System with PHP &amp; MySQL</h1>
+
+			<div class="entry-meta">
+				<span class="posted-on"><i class="fa fa-calendar"></i> <a href="https://www.phpzag.com/push-notification-system-with-php-mysql/" rel="bookmark"><time class="entry-date published" datetime="2018-10-04T02:59:43+00:00"><strong>Last Updated:</strong> 31 March, 2019</time><time class="updated" datetime="2019-03-31T15:46:51+00:00">31 March, 2019</time></a></span><span class="byline"> <i class="fa fa-user"></i> <span class="author vcard"><a class="url fn n" href="https://www.phpzag.com/author/phpzag/">PHPZAG Team</a></span></span>
+								<span class="cat-links"><i class="fa fa-folder-open-o"></i>
+					 <a href="https://www.phpzag.com/category/tutorials/php-tutorial-2/" rel="category tag">PHP</a>				</span>
+								
+			</div><!-- .entry-meta -->
+		</header><!-- .entry-header -->
+
+		<div class="entry-content">
+			<div class="insert-post-ads1">
+			<script async="" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/f(8).txt"></script>
+			<!-- Responsive Ads2 -->
+			<ins class="adsbygoogle" style="display: block; height: 250px;" data-ad-client="ca-pub-1169273815439326" data-ad-slot="4814073657" data-ad-format="auto" data-full-width-responsive="true" data-adsbygoogle-status="done"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:305px;background-color:transparent;"><ins id="aswift_1_anchor" style="display:block;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:305px;background-color:transparent;"><iframe width="305" height="250" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;border:0px;width:305px;height:250px;" __idm_frm__="146" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/saved_resource(4).html"></iframe></ins></ins></ins>
+			<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+			</div>
+			<p>Web Push Notification is a feature to send customized clickable message to display in subscribed user’s web browsers like Chrome, Firefox, Safari etc. The push notifications are useful to update user’s with specific news, chat, new email and time bound information like offers etc. So if you’re thinking about implementing web notification system with PHP, you’re here at right place. In this tutorial you will learn how to implement web push notification system with PHP and MySQL. We will cover this tutorial with live demo to save notification message with settings to display to particular users when users logged in.<span id="more-5852"></span></p>
+<p>maybe you like :&nbsp;<a href="http://edessin.online/">Printable coloring page, printable drawing page</a></p>
+<p>Here in this example, administrator will create web push notifications with many options and broadcast to logged in users in their browser with many options like:</p>
+<ul>
+<li>The notification may displayed many times according to settings.</li>
+<li>The user can also define interval time for the next notification to be displayed.</li>
+<li>The system will check for the notification every time according to given time</li>
+<li>The notification will be closed after given time time.</li>
+</ul>
+<p>As we will cover this tutorial with live example to implement web push notification system with PHP and MySQL, so the major files for this example is following.</p>
+<ul>
+<li><strong>index.php</strong></li>
+<li><strong>login.php</strong></li>
+<li><strong>manage_notification.php</strong></li>
+<li><strong>notification.js</strong></li>
+<li><strong>notification.php</strong></li>
+<li><strong>Push.php</strong></li>
+<li><strong>logout.php</strong></li>
+</ul>
+<p><strong>Step1: Create Database Tables</strong><br>
+First we will create MySQL database table <strong>notif_user</strong> to store users for login to show notification message to logged in users.</p><div class="6r7rtolC" style="clear:both;float:left;width:100%;margin:0 0 20px 0;"><script async="" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/f(8).txt"></script>
+<ins class="adsbygoogle" style="display: block; text-align: center; height: 162px;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-1169273815439326" data-ad-slot="8120126814" data-adsbygoogle-status="done"><ins id="aswift_2_expand" style="display:inline-table;border:none;height:162px;margin:0;padding:0;position:relative;visibility:visible;width:648px;background-color:transparent;"><ins id="aswift_2_anchor" style="display:block;border:none;height:162px;margin:0;padding:0;position:relative;visibility:visible;width:648px;background-color:transparent;"><iframe width="648" height="162" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_2" name="aswift_2" style="left:0;position:absolute;top:0;border:0px;width:648px;height:162px;" __idm_frm__="148" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/saved_resource(5).html"></iframe></ins></ins></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<p><code class="prettyprint prettyprinted" style=""><span class="pln">CREATE TABLE </span><span class="str">`notif_user`</span><span class="pln"> </span><span class="pun">(</span><br><span class="pln"> </span><span class="str">`id`</span><span class="pln"> </span><span class="kwd">int</span><span class="pun">(</span><span class="lit">11</span><span class="pun">)</span><span class="pln"> NOT NULL</span><span class="pun">,</span><br><span class="pln"> </span><span class="str">`username`</span><span class="pln"> varchar</span><span class="pun">(</span><span class="lit">100</span><span class="pun">)</span><span class="pln"> NOT NULL</span><span class="pun">,</span><br><span class="pln"> </span><span class="str">`password`</span><span class="pln"> varchar</span><span class="pun">(</span><span class="lit">100</span><span class="pun">)</span><span class="pln"> NOT NULL</span><br><span class="pln"> </span><span class="pun">)</span><span class="pln"> ENGINE</span><span class="pun">=</span><span class="typ">InnoDB</span><span class="pln"> DEFAULT CHARSET</span><span class="pun">=</span><span class="pln">latin1</span><span class="pun">;</span><br><span class="pln"> </span></code></p>
+<p>We will also create a table <strong>notif</strong> to store notification details.</p>
+<p><code class="prettyprint prettyprinted" style=""><span class="pln">CREATE TABLE </span><span class="str">`notif`</span><span class="pln"> </span><span class="pun">(</span><br><span class="pln"> </span><span class="str">`id`</span><span class="pln"> </span><span class="kwd">int</span><span class="pun">(</span><span class="lit">11</span><span class="pun">)</span><span class="pln"> NOT NULL</span><span class="pun">,</span><br><span class="pln"> </span><span class="str">`title`</span><span class="pln"> varchar</span><span class="pun">(</span><span class="lit">250</span><span class="pun">)</span><span class="pln"> NOT NULL</span><span class="pun">,</span><br><span class="pln"> </span><span class="str">`notif_msg`</span><span class="pln"> text NOT NULL</span><span class="pun">,</span><br><span class="pln"> </span><span class="str">`notif_time`</span><span class="pln"> datetime DEFAULT NULL</span><span class="pun">,</span><br><span class="pln"> </span><span class="str">`notif_repeat`</span><span class="pln"> </span><span class="kwd">int</span><span class="pun">(</span><span class="lit">11</span><span class="pun">)</span><span class="pln"> DEFAULT </span><span class="str">'1'</span><span class="pun">,</span><br><span class="pln"> </span><span class="str">`notif_loop`</span><span class="pln"> </span><span class="kwd">int</span><span class="pun">(</span><span class="lit">11</span><span class="pun">)</span><span class="pln"> NOT NULL DEFAULT </span><span class="str">'1'</span><span class="pun">,</span><br><span class="pln"> </span><span class="str">`publish_date`</span><span class="pln"> timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP</span><span class="pun">,</span><br><span class="pln"> </span><span class="str">`username`</span><span class="pln"> varchar</span><span class="pun">(</span><span class="lit">255</span><span class="pun">)</span><span class="pln"> NOT NULL</span><br><span class="pln"> </span><span class="pun">)</span><span class="pln"> ENGINE</span><span class="pun">=</span><span class="typ">InnoDB</span><span class="pln"> DEFAULT CHARSET</span><span class="pun">=</span><span class="pln">latin1</span><span class="pun">;</span><br><span class="pln"> </span></code></p>
+<p><strong>Step2: Create User Login</strong><br>
+Now we will create user login page to allow user login to show notifications to logged in users.</p>
+<p><code class="prettyprint prettyprinted" style=""><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"container"</span><span class="tag">&gt;</span><br><span class="pln"> </span><span class="tag">&lt;h2&gt;</span><span class="pln">User Login:</span><span class="tag">&lt;/h2&gt;</span><br><span class="pln"> </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"row"</span><span class="tag">&gt;</span><br><span class="pln"> </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"col-sm-4"</span><span class="tag">&gt;</span><br><span class="pln"> </span><span class="tag">&lt;form</span><span class="pln"> </span><span class="atn">method</span><span class="pun">=</span><span class="atv">"post"</span><span class="tag">&gt;</span><br><span class="pln"> </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-group"</span><span class="tag">&gt;</span><br><span class="pln"> </span><span class="pun">&lt;?</span><span class="pln">php </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">$loginError </span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> </span><span class="pun">?&gt;</span><br><span class="pln"> </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"alert alert-warning"</span><span class="tag">&gt;</span><span class="pun">&lt;?</span><span class="pln">php echo $loginError</span><span class="pun">;</span><span class="pln"> </span><span class="pun">?&gt;</span><span class="tag">&lt;/div&gt;</span><br><span class="pln"> </span><span class="pun">&lt;?</span><span class="pln">php </span><span class="pun">}</span><span class="pln"> </span><span class="pun">?&gt;</span><br><span class="pln"> </span><span class="tag">&lt;/div&gt;</span><br><span class="pln"> </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-group"</span><span class="tag">&gt;</span><br><span class="pln"> </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">"username"</span><span class="tag">&gt;</span><span class="pln">Username:</span><span class="tag">&lt;/label&gt;</span><br><span class="pln"> </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"username"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-control"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"username"</span><span class="pln"> </span><span class="atn">required</span><span class="tag">&gt;</span><br><span class="pln"> </span><span class="tag">&lt;/div&gt;</span><br><span class="pln"> </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-group"</span><span class="tag">&gt;</span><br><span class="pln"> </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">"pwd"</span><span class="tag">&gt;</span><span class="pln">Password:</span><span class="tag">&lt;/label&gt;</span><br><span class="pln"> </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"password"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-control"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"pwd"</span><span class="pln"> </span><span class="atn">required</span><span class="tag">&gt;</span><br><span class="pln"> </span><span class="tag">&lt;/div&gt;</span><br><span class="pln"> </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"submit"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"login"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn btn-default"</span><span class="tag">&gt;</span><span class="pln">Login</span><span class="tag">&lt;/button&gt;</span><br><span class="pln"> </span><span class="tag">&lt;/form&gt;</span><br><span class="pln"> </span><span class="tag">&lt;/div&gt;</span><br><span class="pln"> </span><span class="tag">&lt;/div&gt;</span><br><span class="pln"> </span><span class="tag">&lt;/div&gt;</span><br><span class="pln"> </span></code></p><div class="B1T0lWuU" style="clear: both; float: left; width: 100%; margin: 0px; padding: 0px; border-width: 0px;"><script async="" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/f(8).txt"></script>
+<ins class="adsbygoogle" style="display: block; text-align: center; height: 0px; width: 0px;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-1169273815439326" data-ad-slot="8120126814" data-adsbygoogle-status="done"><ins id="aswift_3_expand" style="display: inline-table; border: none; height: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; width: 0px; background-color: transparent;"><ins id="aswift_3_anchor" style="display: block; border: none; height: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; width: 0px; background-color: transparent; overflow: hidden; opacity: 0;"><iframe width="648" height="162" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_3" name="aswift_3" style="left:0;position:absolute;top:0;border:0px;width:648px;height:162px;" __idm_frm__="150" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/saved_resource(6).html"></iframe></ins></ins></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<p>we will implement user login functionality on form lsubmit.</p>
+<p><code class="prettyprint prettyprinted" style=""><span class="pun">&lt;?</span><span class="pln">php</span><br><span class="pln"> </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(!</span><span class="pln">empty</span><span class="pun">(</span><span class="pln">$_POST</span><span class="pun">[</span><span class="str">'username'</span><span class="pun">])</span><span class="pln"> </span><span class="pun">&amp;&amp;</span><span class="pln"> </span><span class="pun">!</span><span class="pln">empty</span><span class="pun">(</span><span class="pln">$_POST</span><span class="pun">[</span><span class="str">'pwd'</span><span class="pun">]))</span><span class="pln"> </span><span class="pun">{</span><br><span class="pln"> include </span><span class="pun">(</span><span class="str">'Push.php'</span><span class="pun">);</span><br><span class="pln"> $push </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Push</span><span class="pun">();</span><br><span class="pln"> $user </span><span class="pun">=</span><span class="pln"> $push</span><span class="pun">-&gt;</span><span class="pln">loginUsers</span><span class="pun">(</span><span class="pln">$_POST</span><span class="pun">[</span><span class="str">'username'</span><span class="pun">],</span><span class="pln"> $_POST</span><span class="pun">[</span><span class="str">'pwd'</span><span class="pun">]);</span><br><span class="pln"> </span><span class="kwd">if</span><span class="pun">(!</span><span class="pln">empty</span><span class="pun">(</span><span class="pln">$user</span><span class="pun">))</span><span class="pln"> </span><span class="pun">{</span><br><span class="pln"> $_SESSION</span><span class="pun">[</span><span class="str">'username'</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> $user</span><span class="pun">[</span><span class="lit">0</span><span class="pun">][</span><span class="str">'username'</span><span class="pun">];</span><br><span class="pln"> header</span><span class="pun">(</span><span class="str">"Location:index.php"</span><span class="pun">);</span><br><span class="pln"> </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">else</span><span class="pln"> </span><span class="pun">{</span><br><span class="pln"> $loginError </span><span class="pun">=</span><span class="pln"> </span><span class="str">"Invalid username or password!"</span><span class="pun">;</span><br><span class="pln"> </span><span class="pun">}</span><br><span class="pln"> </span><span class="pun">}</span><br><span class="pln"> </span><span class="pun">?&gt;</span><br><span class="pln"> </span></code></p>
+<p><strong>Step3: Add Notification and Display List</strong><br>
+In <strong>manage_notification.php</strong> file, we will create HTML for adding new notification by Administrator.</p>
+<p><code class="prettyprint prettyprinted" style=""><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"row"</span><span class="tag">&gt;</span><br><span class="pln"> </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"col-sm-6"</span><span class="tag">&gt;</span><br><span class="pln"> </span><span class="tag">&lt;h3&gt;</span><span class="pln">Add New Notification:</span><span class="tag">&lt;/h3&gt;</span><br><span class="pln"> &lt;form method="post" action="</span><span class="pun">&lt;?</span><span class="pln">php echo $_SERVER</span><span class="pun">[</span><span class="str">'PHP_SELF'</span><span class="pun">];</span><span class="pln"> </span><span class="pun">?&gt;</span><span class="pln">"&gt;</span><br><span class="pln"> </span><span class="tag">&lt;table</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"table borderless"</span><span class="tag">&gt;</span><br><span class="pln"> </span><span class="tag">&lt;tr&gt;</span><br><span class="pln"> </span><span class="tag">&lt;td&gt;</span><span class="pln">Message</span><span class="tag">&lt;/td&gt;</span><br><span class="pln"> </span><span class="tag">&lt;td&gt;&lt;textarea</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"msg"</span><span class="pln"> </span><span class="atn">cols</span><span class="pun">=</span><span class="atv">"50"</span><span class="pln"> </span><span class="atn">rows</span><span class="pun">=</span><span class="atv">"4"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-control"</span><span class="pln"> </span><span class="atn">required</span><span class="tag">&gt;&lt;/textarea&gt;&lt;/td&gt;</span><br><span class="pln"> </span><span class="tag">&lt;/tr&gt;</span><br><span class="pln"> </span><span class="tag">&lt;tr&gt;</span><br><span class="pln"> </span><span class="tag">&lt;td&gt;</span><span class="pln">Broadcast time</span><span class="tag">&lt;/td&gt;</span><br><span class="pln"> </span><span class="tag">&lt;td&gt;&lt;select</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"time"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-control"</span><span class="tag">&gt;&lt;option&gt;</span><span class="pln">Now</span><span class="tag">&lt;/option&gt;&lt;/select&gt;</span><span class="pln"> </span><span class="tag">&lt;/td&gt;</span><br><span class="pln"> </span><span class="tag">&lt;/tr&gt;</span><br><span class="pln"> </span><span class="tag">&lt;tr&gt;</span><br><span class="pln"> </span><span class="tag">&lt;td&gt;</span><span class="pln">Loop (time)</span><span class="tag">&lt;/td&gt;</span><br><span class="pln"> </span><span class="tag">&lt;td&gt;&lt;select</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"loops"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-control"</span><span class="tag">&gt;</span><br><span class="pln"> </span><span class="pun">&lt;?</span><span class="pln">php</span><br><span class="pln"> </span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="pln">$i</span><span class="pun">=</span><span class="lit">1</span><span class="pun">;</span><span class="pln"> $i</span><span class="pun">&lt;=</span><span class="lit">5</span><span class="pln"> </span><span class="pun">;</span><span class="pln"> $i</span><span class="pun">++)</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> </span><span class="pun">?&gt;</span><br><span class="pln"> &lt;option value="</span><span class="pun">&lt;?</span><span class="pln">php echo $i </span><span class="pun">?&gt;</span><span class="pln">"&gt;</span><span class="pun">&lt;?</span><span class="pln">php echo $i </span><span class="pun">?&gt;</span><span class="tag">&lt;/option&gt;</span><br><span class="pln"> </span><span class="pun">&lt;?</span><span class="pln">php </span><span class="pun">}</span><span class="pln"> </span><span class="pun">?&gt;</span><br><span class="pln"> </span><span class="tag">&lt;/select&gt;&lt;/td&gt;</span><br><span class="pln"> </span><span class="tag">&lt;/tr&gt;</span><br><span class="pln"> </span><span class="tag">&lt;tr&gt;</span><br><span class="pln"> </span><span class="tag">&lt;td&gt;</span><span class="pln">Loop Every (Minute)</span><span class="tag">&lt;/td&gt;</span><br><span class="pln"> </span><span class="tag">&lt;td&gt;&lt;select</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"loop_every"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-control"</span><span class="tag">&gt;</span><br><span class="pln"> </span><span class="pun">&lt;?</span><span class="pln">php</span><br><span class="pln"> </span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="pln">$i</span><span class="pun">=</span><span class="lit">1</span><span class="pun">;</span><span class="pln"> $i</span><span class="pun">&lt;=</span><span class="lit">60</span><span class="pln"> </span><span class="pun">;</span><span class="pln"> $i</span><span class="pun">++)</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> </span><span class="pun">?&gt;</span><br><span class="pln"> &lt;option value="</span><span class="pun">&lt;?</span><span class="pln">php echo $i </span><span class="pun">?&gt;</span><span class="pln">"&gt;</span><span class="pun">&lt;?</span><span class="pln">php echo $i </span><span class="pun">?&gt;</span><span class="tag">&lt;/option&gt;</span><br><span class="pln"> </span><span class="pun">&lt;?</span><span class="pln">php </span><span class="pun">}</span><span class="pln"> </span><span class="pun">?&gt;</span><br><span class="pln"> </span><span class="tag">&lt;/select&gt;</span><span class="pln"> </span><span class="tag">&lt;/td&gt;</span><br><span class="pln"> </span><span class="tag">&lt;/tr&gt;</span><br><span class="pln"> </span><span class="tag">&lt;tr&gt;</span><br><span class="pln"> </span><span class="tag">&lt;td&gt;</span><span class="pln">For</span><span class="tag">&lt;/td&gt;</span><br><span class="pln"> </span><span class="tag">&lt;td&gt;&lt;select</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"user"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-control"</span><span class="tag">&gt;</span><br><span class="pln"> </span><span class="pun">&lt;?</span><span class="pln">php</span><br><span class="pln"> $user </span><span class="pun">=</span><span class="pln"> $push</span><span class="pun">-&gt;</span><span class="pln">listUsers</span><span class="pun">();</span><br><span class="pln"> </span><span class="kwd">foreach</span><span class="pln"> </span><span class="pun">(</span><span class="pln">$user </span><span class="kwd">as</span><span class="pln"> $key</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><br><span class="pln"> </span><span class="pun">?&gt;</span><br><span class="pln"> &lt;option value="</span><span class="pun">&lt;?</span><span class="pln">php echo $key</span><span class="pun">[</span><span class="str">'username'</span><span class="pun">]</span><span class="pln"> </span><span class="pun">?&gt;</span><span class="pln">"&gt;</span><span class="pun">&lt;?</span><span class="pln">php echo $key</span><span class="pun">[</span><span class="str">'username'</span><span class="pun">]</span><span class="pln"> </span><span class="pun">?&gt;</span><span class="tag">&lt;/option&gt;</span><br><span class="pln"> </span><span class="pun">&lt;?</span><span class="pln">php </span><span class="pun">}</span><span class="pln"> </span><span class="pun">?&gt;</span><br><span class="pln"> </span><span class="tag">&lt;/select&gt;&lt;/td&gt;</span><br><span class="pln"> </span><span class="tag">&lt;/tr&gt;</span><br><span class="pln"> </span><span class="tag">&lt;tr&gt;</span><br><span class="pln"> </span><span class="tag">&lt;td</span><span class="pln"> </span><span class="atn">colspan</span><span class="pun">=</span><span class="atv">1</span><span class="tag">&gt;&lt;/td&gt;</span><br><span class="pln"> </span><span class="tag">&lt;td</span><span class="pln"> </span><span class="atn">colspan</span><span class="pun">=</span><span class="atv">1</span><span class="tag">&gt;&lt;/td&gt;</span><br><span class="pln"> </span><span class="tag">&lt;/tr&gt;</span><br><span class="pln"> </span><span class="tag">&lt;tr&gt;</span><br><span class="pln"> </span><span class="tag">&lt;td</span><span class="pln"> </span><span class="atn">colspan</span><span class="pun">=</span><span class="atv">1</span><span class="tag">&gt;&lt;/td&gt;</span><br><span class="pln"> </span><span class="tag">&lt;td&gt;&lt;button</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"submit"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"submit"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn btn-info"</span><span class="tag">&gt;</span><span class="pln">Add Message</span><span class="tag">&lt;/button&gt;&lt;/td&gt;</span><br><span class="pln"> </span><span class="tag">&lt;/tr&gt;</span><br><span class="pln"> </span><span class="tag">&lt;/table&gt;</span><br><span class="pln"> </span><span class="tag">&lt;/form&gt;</span><br><span class="pln"> </span><span class="tag">&lt;/div&gt;</span><br><span class="pln"> </span><span class="tag">&lt;/div&gt;</span><br><span class="pln"> </span></code></p>
+<p>we will implement functionality to save new notifications to database table on form submit.<br>
+<code class="prettyprint prettyprinted" style=""><span class="pun">&lt;?</span><span class="pln">php</span><br><span class="pln"> </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">isset</span><span class="pun">(</span><span class="pln">$_POST</span><span class="pun">[</span><span class="str">'submit'</span><span class="pun">]))</span><span class="pln"> </span><span class="pun">{</span><br><span class="pln"> </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">isset</span><span class="pun">(</span><span class="pln">$_POST</span><span class="pun">[</span><span class="str">'msg'</span><span class="pun">])</span><span class="pln"> </span><span class="kwd">and</span><span class="pln"> isset</span><span class="pun">(</span><span class="pln">$_POST</span><span class="pun">[</span><span class="str">'time'</span><span class="pun">])</span><span class="pln"> </span><span class="kwd">and</span><span class="pln"> isset</span><span class="pun">(</span><span class="pln">$_POST</span><span class="pun">[</span><span class="str">'loops'</span><span class="pun">])</span><span class="pln"> </span><span class="kwd">and</span><span class="pln"> isset</span><span class="pun">(</span><span class="pln">$_POST</span><span class="pun">[</span><span class="str">'loop_every'</span><span class="pun">])</span><span class="pln"> </span><span class="kwd">and</span><span class="pln"> isset</span><span class="pun">(</span><span class="pln">$_POST</span><span class="pun">[</span><span class="str">'user'</span><span class="pun">]))</span><span class="pln"> </span><span class="pun">{</span><br><span class="pln"> $msg </span><span class="pun">=</span><span class="pln"> $_POST</span><span class="pun">[</span><span class="str">'msg'</span><span class="pun">];</span><br><span class="pln"> $time </span><span class="pun">=</span><span class="pln"> date</span><span class="pun">(</span><span class="str">'Y-m-d H:i:s'</span><span class="pun">);</span><br><span class="pln"> $loop</span><span class="pun">=</span><span class="pln"> $_POST</span><span class="pun">[</span><span class="str">'loops'</span><span class="pun">];</span><br><span class="pln"> $loop_every</span><span class="pun">=</span><span class="pln">$_POST</span><span class="pun">[</span><span class="str">'loop_every'</span><span class="pun">];</span><br><span class="pln"> $user </span><span class="pun">=</span><span class="pln"> $_POST</span><span class="pun">[</span><span class="str">'user'</span><span class="pun">];</span><br><span class="pln"> $isSaved </span><span class="pun">=</span><span class="pln"> $push</span><span class="pun">-&gt;</span><span class="pln">saveNotification</span><span class="pun">(</span><span class="pln">$msg</span><span class="pun">,</span><span class="pln">$time</span><span class="pun">,</span><span class="pln">$loop</span><span class="pun">,</span><span class="pln">$loop_every</span><span class="pun">,</span><span class="pln">$user</span><span class="pun">);</span><br><span class="pln"> </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">$isSaved</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><br><span class="pln"> echo </span><span class="str">'* save new notification success'</span><span class="pun">;</span><br><span class="pln"> </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">else</span><span class="pln"> </span><span class="pun">{</span><br><span class="pln"> echo </span><span class="str">'error save data'</span><span class="pun">;</span><br><span class="pln"> </span><span class="pun">}</span><br><span class="pln"> </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">else</span><span class="pln"> </span><span class="pun">{</span><br><span class="pln"> echo </span><span class="str">'* completed the parameter above'</span><span class="pun">;</span><br><span class="pln"> </span><span class="pun">}</span><br><span class="pln"> </span><span class="pun">}</span><br><span class="pln"> </span><span class="pun">?&gt;</span><br><span class="pln"> </span></code></p>
+<p>Now we will display list of add notifications.</p>
+<p><code class="prettyprint prettyprinted" style=""><span class="tag">&lt;h3&gt;</span><span class="pln">Notifications List:</span><span class="tag">&lt;/h3&gt;</span><br><span class="pln"> </span><span class="tag">&lt;table</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"table"</span><span class="tag">&gt;</span><br><span class="pln"> </span><span class="tag">&lt;thead&gt;</span><br><span class="pln"> </span><span class="tag">&lt;tr&gt;</span><br><span class="pln"> </span><span class="tag">&lt;th&gt;</span><span class="pln">No</span><span class="tag">&lt;/th&gt;</span><br><span class="pln"> </span><span class="tag">&lt;th&gt;</span><span class="pln">Next Schedule</span><span class="tag">&lt;/th&gt;</span><br><span class="pln"> </span><span class="tag">&lt;th&gt;</span><span class="pln">Message</span><span class="tag">&lt;/th&gt;</span><br><span class="pln"> </span><span class="tag">&lt;th&gt;</span><span class="pln">Remains</span><span class="tag">&lt;/th&gt;</span><br><span class="pln"> </span><span class="tag">&lt;th&gt;</span><span class="pln">User</span><span class="tag">&lt;/th&gt;</span><br><span class="pln"> </span><span class="tag">&lt;/tr&gt;</span><br><span class="pln"> </span><span class="tag">&lt;/thead&gt;</span><br><span class="pln"> </span><span class="tag">&lt;tbody&gt;</span><br><span class="pln"> </span><span class="pun">&lt;?</span><span class="pln">php $a </span><span class="pun">=</span><span class="lit">1</span><span class="pun">;</span><br><span class="pln"> $notifList </span><span class="pun">=</span><span class="pln"> $push</span><span class="pun">-&gt;</span><span class="pln">listNotification</span><span class="pun">();</span><br><span class="pln"> </span><span class="kwd">foreach</span><span class="pln"> </span><span class="pun">(</span><span class="pln">$notifList </span><span class="kwd">as</span><span class="pln"> $key</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><br><span class="pln"> </span><span class="pun">?&gt;</span><br><span class="pln"> </span><span class="tag">&lt;tr&gt;</span><br><span class="pln"> </span><span class="tag">&lt;td&gt;</span><span class="pun">&lt;?</span><span class="pln">php echo $a </span><span class="pun">?&gt;</span><span class="tag">&lt;/td&gt;</span><br><span class="pln"> </span><span class="tag">&lt;td&gt;</span><span class="pun">&lt;?</span><span class="pln">php echo $key</span><span class="pun">[</span><span class="str">'notif_time'</span><span class="pun">]</span><span class="pln"> </span><span class="pun">?&gt;</span><span class="tag">&lt;/td&gt;</span><br><span class="pln"> </span><span class="tag">&lt;td&gt;</span><span class="pun">&lt;?</span><span class="pln">php echo $key</span><span class="pun">[</span><span class="str">'notif_msg'</span><span class="pun">]</span><span class="pln"> </span><span class="pun">?&gt;</span><span class="tag">&lt;/td&gt;</span><br><span class="pln"> </span><span class="tag">&lt;td&gt;</span><span class="pun">&lt;?</span><span class="pln">php echo $key</span><span class="pun">[</span><span class="str">'notif_loop'</span><span class="pun">];</span><span class="pln"> </span><span class="pun">?&gt;</span><span class="tag">&lt;/td&gt;</span><br><span class="pln"> </span><span class="tag">&lt;td&gt;</span><span class="pun">&lt;?</span><span class="pln">php echo $key</span><span class="pun">[</span><span class="str">'username'</span><span class="pun">]</span><span class="pln"> </span><span class="pun">?&gt;</span><span class="tag">&lt;/td&gt;</span><br><span class="pln"> </span><span class="tag">&lt;/tr&gt;</span><br><span class="pln"> </span><span class="pun">&lt;?</span><span class="pln">php $a</span><span class="pun">++;</span><span class="pln"> </span><span class="pun">}</span><span class="pln"> </span><span class="pun">?&gt;</span><br><span class="pln"> </span><span class="tag">&lt;/tbody&gt;</span><br><span class="pln"> </span><span class="tag">&lt;/table&gt;</span><br><span class="pln"> </span></code></p>
+<p><strong>Step4: Broadcast Notification</strong><br>
+In <strong>notification.js</strong> file, we will create function <strong>showNotification()</strong> to make Ajax request to <strong>notification.php</strong> to get notification details for logged in user and execute notification.<br>
+<code class="prettyprint prettyprinted" style=""><br><span class="pln"> </span><span class="kwd">function</span><span class="pln"> showNotification</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><br><span class="pln"> </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(!</span><span class="typ">Notification</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><br><span class="pln"> $</span><span class="pun">(</span><span class="str">'body'</span><span class="pun">).</span><span class="pln">append</span><span class="pun">(</span><span class="str">'&lt;h4 style="color:red"&gt;*Browser does not support Web Notification&lt;/h4&gt;'</span><span class="pun">);</span><br><span class="pln"> </span><span class="kwd">return</span><span class="pun">;</span><br><span class="pln"> </span><span class="pun">}</span><br><span class="pln"> </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="typ">Notification</span><span class="pun">.</span><span class="pln">permission </span><span class="pun">!==</span><span class="pln"> </span><span class="str">"granted"</span><span class="pun">)</span><br><span class="pln"> </span><span class="typ">Notification</span><span class="pun">.</span><span class="pln">requestPermission</span><span class="pun">();</span><br><span class="pln"> </span><span class="kwd">else</span><span class="pln"> </span><span class="pun">{</span><br><span class="pln"> $</span><span class="pun">.</span><span class="pln">ajax</span><span class="pun">({</span><br><span class="pln"> url </span><span class="pun">:</span><span class="pln"> </span><span class="str">"notification.php"</span><span class="pun">,</span><br><span class="pln"> type</span><span class="pun">:</span><span class="pln"> </span><span class="str">"POST"</span><span class="pun">,</span><br><span class="pln"> success</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">data</span><span class="pun">,</span><span class="pln"> textStatus</span><span class="pun">,</span><span class="pln"> jqXHR</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><br><span class="pln"> </span><span class="kwd">var</span><span class="pln"> data </span><span class="pun">=</span><span class="pln"> jQuery</span><span class="pun">.</span><span class="pln">parseJSON</span><span class="pun">(</span><span class="pln">data</span><span class="pun">);</span><br><span class="pln"> </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">data</span><span class="pun">.</span><span class="pln">result </span><span class="pun">==</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><br><span class="pln"> </span><span class="kwd">var</span><span class="pln"> data_notif </span><span class="pun">=</span><span class="pln"> data</span><span class="pun">.</span><span class="pln">notif</span><span class="pun">;</span><br><span class="pln"> </span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">var</span><span class="pln"> i </span><span class="pun">=</span><span class="pln"> data_notif</span><span class="pun">.</span><span class="pln">length </span><span class="pun">-</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span><span class="pln"> i </span><span class="pun">&gt;=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln"> i</span><span class="pun">--)</span><span class="pln"> </span><span class="pun">{</span><br><span class="pln"> </span><span class="kwd">var</span><span class="pln"> theurl </span><span class="pun">=</span><span class="pln"> data_notif</span><span class="pun">[</span><span class="pln">i</span><span class="pun">][</span><span class="str">'url'</span><span class="pun">];</span><br><span class="pln"> </span><span class="kwd">var</span><span class="pln"> notifikasi </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Notification</span><span class="pun">(</span><span class="pln">data_notif</span><span class="pun">[</span><span class="pln">i</span><span class="pun">][</span><span class="str">'title'</span><span class="pun">],</span><span class="pln"> </span><span class="pun">{</span><br><span class="pln"> icon</span><span class="pun">:</span><span class="pln"> data_notif</span><span class="pun">[</span><span class="pln">i</span><span class="pun">][</span><span class="str">'icon'</span><span class="pun">],</span><br><span class="pln"> body</span><span class="pun">:</span><span class="pln"> data_notif</span><span class="pun">[</span><span class="pln">i</span><span class="pun">][</span><span class="str">'msg'</span><span class="pun">],</span><br><span class="pln"> </span><span class="pun">});</span><br><span class="pln"> notifikasi</span><span class="pun">.</span><span class="pln">onclick </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">function</span><span class="pln"> </span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><br><span class="pln"> window</span><span class="pun">.</span><span class="pln">open</span><span class="pun">(</span><span class="pln">theurl</span><span class="pun">);</span><br><span class="pln"> notifikasi</span><span class="pun">.</span><span class="pln">close</span><span class="pun">();</span><br><span class="pln"> </span><span class="pun">};</span><br><span class="pln"> setTimeout</span><span class="pun">(</span><span class="kwd">function</span><span class="pun">(){</span><br><span class="pln"> notifikasi</span><span class="pun">.</span><span class="pln">close</span><span class="pun">();</span><br><span class="pln"> </span><span class="pun">},</span><span class="pln"> </span><span class="lit">5000</span><span class="pun">);</span><br><span class="pln"> </span><span class="pun">};</span><br><span class="pln"> </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">else</span><span class="pln"> </span><span class="pun">{</span><br><span class="pln"> </span><span class="pun">}</span><br><span class="pln"> </span><span class="pun">},</span><br><span class="pln"> error</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">(</span><span class="pln">jqXHR</span><span class="pun">,</span><span class="pln"> textStatus</span><span class="pun">,</span><span class="pln"> errorThrown</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{}</span><br><span class="pln"> </span><span class="pun">});</span><br><span class="pln"> </span><span class="pun">}</span><br><span class="pln"> </span><span class="pun">};</span><br><span class="pln"> </span></code></p><div class="google-auto-placed ap_container" style="text-align: center; width: 100%; height: auto; clear: none;"><ins data-ad-format="auto" class="adsbygoogle adsbygoogle-noablate" data-ad-client="ca-pub-1169273815439326" data-adsbygoogle-status="done" style="display: block; margin: auto; background-color: transparent;"><ins id="aswift_7_expand" style="display: inline-table; border: none; height: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; width: 648px; background-color: transparent;"><ins id="aswift_7_anchor" style="display: block; border: none; height: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; width: 648px; background-color: transparent; overflow: hidden; opacity: 0;"><iframe width="648" height="162" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_7" name="aswift_7" style="left:0;position:absolute;top:0;border:0px;width:648px;height:162px;" __idm_frm__="161" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/saved_resource(7).html"></iframe></ins></ins></ins></div>
+<p>Then we will call function <strong>showNotification()</strong> to execute notification on every 20 seconds. When user logged in, it will make ajax request to check for logged in user and display notification message accordingly.</p>
+<p><code class="prettyprint prettyprinted" style=""><span class="pln">$</span><span class="pun">(</span><span class="pln">document</span><span class="pun">).</span><span class="pln">ready</span><span class="pun">(</span><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><br><span class="pln"> showNotification</span><span class="pun">();</span><br><span class="pln"> setInterval</span><span class="pun">(</span><span class="kwd">function</span><span class="pun">(){</span><span class="pln"> showNotification</span><span class="pun">();</span><span class="pln"> </span><span class="pun">},</span><span class="pln"> </span><span class="lit">20000</span><span class="pun">);</span><br><span class="pln"> </span><span class="pun">});</span><br><span class="pln"> </span></code></p>
+<p><strong>Step5: Get Notification Details</strong><br>
+In <strong>notification.php</strong> file, we will get logged in user’s notification details and returned as json response as this file called by Ajax request.<br>
+<code class="prettyprint prettyprinted" style=""><span class="pun">&lt;?</span><span class="pln">php</span><br><span class="pln"> SESSION_START</span><span class="pun">();</span><br><span class="pln"> include </span><span class="pun">(</span><span class="str">'Push.php'</span><span class="pun">);</span><br><span class="pln"> $push </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Push</span><span class="pun">();</span><br><span class="pln"> $array</span><span class="pun">=</span><span class="pln">array</span><span class="pun">();</span><br><span class="pln"> $rows</span><span class="pun">=</span><span class="pln">array</span><span class="pun">();</span><br><span class="pln"> $notifList </span><span class="pun">=</span><span class="pln"> $push</span><span class="pun">-&gt;</span><span class="pln">listNotificationUser</span><span class="pun">(</span><span class="pln">$_SESSION</span><span class="pun">[</span><span class="str">'username'</span><span class="pun">]);</span><br><span class="pln"> $record </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><br><span class="pln"> </span><span class="kwd">foreach</span><span class="pln"> </span><span class="pun">(</span><span class="pln">$notifList </span><span class="kwd">as</span><span class="pln"> $key</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><br><span class="pln"> $data</span><span class="pun">[</span><span class="str">'title'</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> $key</span><span class="pun">[</span><span class="str">'title'</span><span class="pun">];</span><br><span class="pln"> $data</span><span class="pun">[</span><span class="str">'msg'</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> $key</span><span class="pun">[</span><span class="str">'notif_msg'</span><span class="pun">];</span><br><span class="pln"> $data</span><span class="pun">[</span><span class="str">'icon'</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="str">'https://phpzag.com/demo/push-notification-system-with-php-mysql-demo/avatar.png'</span><span class="pun">;</span><br><span class="pln"> $data</span><span class="pun">[</span><span class="str">'url'</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="str">'https://phpzag.com'</span><span class="pun">;</span><br><span class="pln"> $rows</span><span class="pun">[]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> $data</span><span class="pun">;</span><br><span class="pln"> $nextime </span><span class="pun">=</span><span class="pln"> date</span><span class="pun">(</span><span class="str">'Y-m-d H:i:s'</span><span class="pun">,</span><span class="pln">strtotime</span><span class="pun">(</span><span class="pln">date</span><span class="pun">(</span><span class="str">'Y-m-d H:i:s'</span><span class="pun">))+(</span><span class="pln">$key</span><span class="pun">[</span><span class="str">'notif_repeat'</span><span class="pun">]*</span><span class="lit">60</span><span class="pun">));</span><br><span class="pln"> $push</span><span class="pun">-&gt;</span><span class="pln">updateNotification</span><span class="pun">(</span><span class="pln">$key</span><span class="pun">[</span><span class="str">'id'</span><span class="pun">],</span><span class="pln">$nextime</span><span class="pun">);</span><br><span class="pln"> $record</span><span class="pun">++;</span><br><span class="pln"> </span><span class="pun">}</span><br><span class="pln"> $array</span><span class="pun">[</span><span class="str">'notif'</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> $rows</span><span class="pun">;</span><br><span class="pln"> $array</span><span class="pun">[</span><span class="str">'count'</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> $record</span><span class="pun">;</span><br><span class="pln"> $array</span><span class="pun">[</span><span class="str">'result'</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">;</span><br><span class="pln"> echo json_encode</span><span class="pun">(</span><span class="pln">$array</span><span class="pun">);</span><br><span class="pln"> </span><span class="pun">?&gt;</span><br><span class="pln"> </span></code></p>
+<p><strong>Step6: Create Get and Set Push Notification functions</strong><br>
+In <strong>Push.php</strong> file, we will create functions to perform push notification functionality like get notification details, save notification, update etc.<br>
+<code class="prettyprint prettyprinted" style=""><span class="pun">&lt;?</span><span class="pln">php</span><br><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">Push</span><span class="pun">{</span><br><span class="pln"> </span><span class="kwd">private</span><span class="pln"> $host </span><span class="pun">=</span><span class="pln"> </span><span class="str">'localhost'</span><span class="pun">;</span><br><span class="pln"> </span><span class="kwd">private</span><span class="pln"> $user </span><span class="pun">=</span><span class="pln"> </span><span class="str">'root'</span><span class="pun">;</span><br><span class="pln"> </span><span class="kwd">private</span><span class="pln"> $password </span><span class="pun">=</span><span class="pln"> </span><span class="str">''</span><span class="pun">;</span><br><span class="pln"> </span><span class="kwd">private</span><span class="pln"> $database </span><span class="pun">=</span><span class="pln"> </span><span class="str">'phpzag_demos'</span><span class="pun">;</span><br><span class="pln"> </span><span class="kwd">private</span><span class="pln"> $notifTable </span><span class="pun">=</span><span class="pln"> </span><span class="str">'notif'</span><span class="pun">;</span><br><span class="pln"> </span><span class="kwd">private</span><span class="pln"> $userTable </span><span class="pun">=</span><span class="pln"> </span><span class="str">'notif_user'</span><span class="pun">;</span><br><span class="pln"> </span><span class="kwd">private</span><span class="pln"> $dbConnect </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">;</span><br><span class="pln"> </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">function</span><span class="pln"> __construct</span><span class="pun">(){</span><br><span class="pln"> </span><span class="kwd">if</span><span class="pun">(!</span><span class="pln">$this</span><span class="pun">-&gt;</span><span class="pln">dbConnect</span><span class="pun">){</span><br><span class="pln"> $conn </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> mysqli</span><span class="pun">(</span><span class="pln">$this</span><span class="pun">-&gt;</span><span class="pln">host</span><span class="pun">,</span><span class="pln"> $this</span><span class="pun">-&gt;</span><span class="pln">user</span><span class="pun">,</span><span class="pln"> $this</span><span class="pun">-&gt;</span><span class="pln">password</span><span class="pun">,</span><span class="pln"> $this</span><span class="pun">-&gt;</span><span class="pln">database</span><span class="pun">);</span><br><span class="pln"> </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">$conn</span><span class="pun">-&gt;</span><span class="pln">connect_error</span><span class="pun">){</span><br><span class="pln"> </span><span class="kwd">die</span><span class="pun">(</span><span class="str">"Error failed to connect to MySQL: "</span><span class="pln"> </span><span class="pun">.</span><span class="pln"> $conn</span><span class="pun">-&gt;</span><span class="pln">connect_error</span><span class="pun">);</span><br><span class="pln"> </span><span class="pun">}</span><span class="kwd">else</span><span class="pun">{</span><br><span class="pln"> $this</span><span class="pun">-&gt;</span><span class="pln">dbConnect </span><span class="pun">=</span><span class="pln"> $conn</span><span class="pun">;</span><br><span class="pln"> </span><span class="pun">}</span><br><span class="pln"> </span><span class="pun">}</span><br><span class="pln"> </span><span class="pun">}</span><br><span class="pln"> </span><span class="kwd">private</span><span class="pln"> </span><span class="kwd">function</span><span class="pln"> getData</span><span class="pun">(</span><span class="pln">$sqlQuery</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><br><span class="pln"> $result </span><span class="pun">=</span><span class="pln"> mysqli_query</span><span class="pun">(</span><span class="pln">$this</span><span class="pun">-&gt;</span><span class="pln">dbConnect</span><span class="pun">,</span><span class="pln"> $sqlQuery</span><span class="pun">);</span><br><span class="pln"> </span><span class="kwd">if</span><span class="pun">(!</span><span class="pln">$result</span><span class="pun">){</span><br><span class="pln"> </span><span class="kwd">die</span><span class="pun">(</span><span class="str">'Error in query: '</span><span class="pun">.</span><span class="pln"> mysqli_error</span><span class="pun">());</span><br><span class="pln"> </span><span class="pun">}</span><br><span class="pln"> $data</span><span class="pun">=</span><span class="pln"> array</span><span class="pun">();</span><br><span class="pln"> </span><span class="kwd">while</span><span class="pln"> </span><span class="pun">(</span><span class="pln">$row </span><span class="pun">=</span><span class="pln"> mysqli_fetch_array</span><span class="pun">(</span><span class="pln">$result</span><span class="pun">,</span><span class="pln"> MYSQL_ASSOC</span><span class="pun">))</span><span class="pln"> </span><span class="pun">{</span><br><span class="pln"> $data</span><span class="pun">[]=</span><span class="pln">$row</span><span class="pun">;</span><br><span class="pln"> </span><span class="pun">}</span><br><span class="pln"> </span><span class="kwd">return</span><span class="pln"> $data</span><span class="pun">;</span><br><span class="pln"> </span><span class="pun">}</span><br><span class="pln"> </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">function</span><span class="pln"> listNotification</span><span class="pun">(){</span><br><span class="pln"> $sqlQuery </span><span class="pun">=</span><span class="pln"> </span><span class="str">'SELECT * FROM '</span><span class="pun">.</span><span class="pln">$this</span><span class="pun">-&gt;</span><span class="pln">notifTable</span><span class="pun">;</span><br><span class="pln"> </span><span class="kwd">return</span><span class="pln"> $this</span><span class="pun">-&gt;</span><span class="pln">getData</span><span class="pun">(</span><span class="pln">$sqlQuery</span><span class="pun">);</span><br><span class="pln"> </span><span class="pun">}</span><br><span class="pln"> </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">function</span><span class="pln"> listNotificationUser</span><span class="pun">(</span><span class="pln">$user</span><span class="pun">){</span><br><span class="pln"> $sqlQuery </span><span class="pun">=</span><span class="pln"> </span><span class="str">"SELECT * FROM "</span><span class="pun">.</span><span class="pln">$this</span><span class="pun">-&gt;</span><span class="pln">notifTable</span><span class="pun">.</span><span class="str">" WHERE username='$user' AND notif_loop &gt; 0 AND notif_time &lt;= CURRENT_TIMESTAMP()"</span><span class="pun">;</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> $this</span><span class="pun">-&gt;</span><span class="pln">getData</span><span class="pun">(</span><span class="pln">$sqlQuery</span><span class="pun">);</span><br><span class="pln"> </span><span class="pun">}</span><br><span class="pln"> </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">function</span><span class="pln"> listUsers</span><span class="pun">(){</span><br><span class="pln"> $sqlQuery </span><span class="pun">=</span><span class="pln"> </span><span class="str">"SELECT * FROM "</span><span class="pun">.</span><span class="pln">$this</span><span class="pun">-&gt;</span><span class="pln">userTable</span><span class="pun">.</span><span class="str">" WHERE username != 'admin'"</span><span class="pun">;</span><br><span class="pln"> </span><span class="kwd">return</span><span class="pln"> $this</span><span class="pun">-&gt;</span><span class="pln">getData</span><span class="pun">(</span><span class="pln">$sqlQuery</span><span class="pun">);</span><br><span class="pln"> </span><span class="pun">}</span><br><span class="pln"> </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">function</span><span class="pln"> loginUsers</span><span class="pun">(</span><span class="pln">$username</span><span class="pun">,</span><span class="pln"> $password</span><span class="pun">){</span><br><span class="pln"> $sqlQuery </span><span class="pun">=</span><span class="pln"> </span><span class="str">"SELECT id as userid, username, password FROM "</span><span class="pun">.</span><span class="pln">$this</span><span class="pun">-&gt;</span><span class="pln">userTable</span><span class="pun">.</span><span class="str">" WHERE username='$username' AND password='$password'"</span><span class="pun">;</span><br><span class="pln"> </span><span class="kwd">return</span><span class="pln"> $this</span><span class="pun">-&gt;</span><span class="pln">getData</span><span class="pun">(</span><span class="pln">$sqlQuery</span><span class="pun">);</span><br><span class="pln"> </span><span class="pun">}</span><br><span class="pln"> </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">function</span><span class="pln"> saveNotification</span><span class="pun">(</span><span class="pln">$msg</span><span class="pun">,</span><span class="pln"> $time</span><span class="pun">,</span><span class="pln"> $loop</span><span class="pun">,</span><span class="pln"> $loop_every</span><span class="pun">,</span><span class="pln"> $user</span><span class="pun">){</span><br><span class="pln"> $sqlQuery </span><span class="pun">=</span><span class="pln"> </span><span class="str">"INSERT INTO "</span><span class="pun">.</span><span class="pln">$this</span><span class="pun">-&gt;</span><span class="pln">notifTable</span><span class="pun">.</span><span class="str">"(notif_msg, notif_time, notif_repeat, notif_loop, username) VALUES('$msg', '$time', '$loop', '$loop_every', '$user')"</span><span class="pun">;</span><br><span class="pln"> $result </span><span class="pun">=</span><span class="pln"> mysqli_query</span><span class="pun">(</span><span class="pln">$this</span><span class="pun">-&gt;</span><span class="pln">dbConnect</span><span class="pun">,</span><span class="pln"> $sqlQuery</span><span class="pun">);</span><br><span class="pln"> </span><span class="kwd">if</span><span class="pun">(!</span><span class="pln">$result</span><span class="pun">){</span><br><span class="pln"> </span><span class="kwd">return</span><span class="pln"> </span><span class="pun">(</span><span class="str">'Error in query: '</span><span class="pun">.</span><span class="pln"> mysqli_error</span><span class="pun">());</span><br><span class="pln"> </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">else</span><span class="pln"> </span><span class="pun">{</span><br><span class="pln"> </span><span class="kwd">return</span><span class="pln"> $result</span><span class="pun">;</span><br><span class="pln"> </span><span class="pun">}</span><br><span class="pln"> </span><span class="pun">}</span><br><span class="pln"> </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">function</span><span class="pln"> updateNotification</span><span class="pun">(</span><span class="pln">$id</span><span class="pun">,</span><span class="pln"> $nextTime</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><br><span class="pln"> $sqlUpdate </span><span class="pun">=</span><span class="pln"> </span><span class="str">"UPDATE "</span><span class="pun">.</span><span class="pln">$this</span><span class="pun">-&gt;</span><span class="pln">notifTable</span><span class="pun">.</span><span class="str">" SET notif_time = '$nextTime', publish_date=CURRENT_TIMESTAMP(), notif_loop = notif_loop-1 WHERE id='$id')"</span><span class="pun">;</span><br><span class="pln"> mysqli_query</span><span class="pun">(</span><span class="pln">$this</span><span class="pun">-&gt;</span><span class="pln">dbConnect</span><span class="pun">,</span><span class="pln"> $sqlUpdate</span><span class="pun">);</span><br><span class="pln"> </span><span class="pun">}</span><br><span class="pln"> </span><span class="pun">}</span><br><span class="pln"> </span><span class="pun">?&gt;</span><br><span class="pln"> </span></code></p><div class="google-auto-placed ap_container" style="text-align: center; width: 100%; height: auto; clear: none;"><ins data-ad-format="auto" class="adsbygoogle adsbygoogle-noablate" data-ad-client="ca-pub-1169273815439326" data-adsbygoogle-status="done" style="display: block; margin: auto; background-color: transparent;"><ins id="aswift_8_expand" style="display: inline-table; border: none; height: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; width: 648px; background-color: transparent;"><ins id="aswift_8_anchor" style="display: block; border: none; height: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; width: 648px; background-color: transparent; overflow: hidden; opacity: 0;"><iframe width="648" height="162" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_8" name="aswift_8" style="left:0;position:absolute;top:0;border:0px;width:648px;height:162px;" __idm_frm__="162" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/saved_resource(8).html"></iframe></ins></ins></ins></div>
+<p>You can view the live demo from the Demo link and can download the full script from the Download link below.<br>
+<a class="demo" href="https://www.phpzag.com/demo/push-notification-system-with-php-mysql-demo/">Demo</a>            
+            </p><div class="onp-sl-content" style="display: none;" data-lock-id="onpLock666311">
+                <p><a class="download" title="Download " href="https://phpzag.com/demo//push-notification-system-with-php-mysql-demo/push-notification-system-with-php-mysql.zip" target="_blank" rel="noopener">Download</a></p>
+            </div><div class="onp-sl onp-sl-webkit onp-sl-secrets onp-sl-social-locker onp-sl-social-buttons-frist onp-sl-contains-single-group onp-sl-social-buttons-enabled onp-sl-no-touch" style=""><div class="onp-sl-outer-wrap"><div class="onp-sl-inner-wrap"><div class="onp-sl-screen onp-sl-screen-default"><div class="onp-sl-group onp-sl-social-buttons onp-sl-first-group onp-sl-single-group onp-sl-group-index-1 onp-sl-has-counters onp-sl-horizontal onp-sl-lang-en_US"><div class="onp-sl-group-inner-wrap"><div class="onp-sl-text"><div class="onp-sl-header onp-sl-strong">Download Code is Locked</div><div class="onp-sl-message">Please support us, use one of the buttons below to unlock the content.</div></div><div class="onp-sl-control onp-sl-facebook-like onp-sl-facebook onp-sl-flip" style="z-index: 50;"><div class="onp-sl-control-inner-wrap"><a href="https://www.phpzag.com/push-notification-system-with-php-mysql/#" class="onp-sl-button-overlay" style="z-index: 50;"><div class="onp-sl-overlay-back" style="z-index: -1;"></div><div class="onp-sl-overlay-front" style="z-index: 1;"><div class="onp-sl-overlay-icon"></div><div class="onp-sl-overlay-line"></div><div class="onp-sl-overlay-text">like</div></div><div class="onp-sl-overlay-header" style="z-index: 1;"></div></a><div class="onp-sl-social-button onp-sl-social-button-facebook-like"><div data-show-faces="false" data-send="false" data-href="https://www.phpzag.com/push-notification-system-with-php-mysql/" data-font="tahoma" data-colorscheme="light" data-layout="button_count" data-action="like" class="fb-like fb_iframe_widget" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=117100935120196&amp;color_scheme=light&amp;container_width=120&amp;font=tahoma&amp;href=https%3A%2F%2Fwww.phpzag.com%2Fpush-notification-system-with-php-mysql%2F&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;send=false&amp;show_faces=false"><span style="vertical-align: bottom; width: 84px; height: 20px;"><iframe name="f28ca354015c27" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" title="fb:like Facebook Social Plugin" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/like.html" style="border: none; visibility: visible; width: 84px; height: 20px;" __idm_frm__="174" class=""></iframe></span></div></div></div></div><div class="onp-sl-control onp-sl-twitter-tweet onp-sl-twitter onp-sl-flip" style="z-index: 46;"><div class="onp-sl-control-inner-wrap"><a href="https://www.phpzag.com/push-notification-system-with-php-mysql/#" class="onp-sl-button-overlay" style="z-index: 46;"><div class="onp-sl-overlay-back" style="z-index: -1;"></div><div class="onp-sl-overlay-front" style="z-index: 1;"><div class="onp-sl-overlay-icon"></div><div class="onp-sl-overlay-line"></div><div class="onp-sl-overlay-text">tweet</div></div><div class="onp-sl-overlay-header" style="z-index: 1;"></div></a><div class="onp-sl-social-button onp-sl-social-button-twitter-tweet"><iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" style="position: static; visibility: visible; width: 63px; height: 20px;" title="Twitter Tweet Button" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/tweet_button.fb066ff7f5f4afee7716887031da2ea8.en.html" __idm_frm__="169" data-url="https://www.phpzag.com/push-notification-system-with-php-mysql/"></iframe><div class="onp-sl-feature-overlay"></div></div></div></div><div class="onp-sl-control onp-sl-google-plus onp-sl-state-error onp-sl-google onp-sl-flip" style="z-index: 42;"><div class="onp-sl-control-inner-wrap"><a href="https://www.phpzag.com/push-notification-system-with-php-mysql/#" class="onp-sl-button-overlay" style="z-index: 42;"><div class="onp-sl-overlay-back" style="z-index: -1;"></div><div class="onp-sl-overlay-front" style="z-index: 1;"><div class="onp-sl-overlay-icon"></div><div class="onp-sl-overlay-line"></div><div class="onp-sl-overlay-text">+1 us</div></div><div class="onp-sl-overlay-header" style="z-index: 1;"></div></a><div class="onp-sl-error-body"><a href="https://www.phpzag.com/push-notification-system-with-php-mysql/#" class="onp-sl-error-title">error</a></div><div class="onp-sl-social-button onp-sl-social-button-google-plus"></div></div></div></div></div></div></div></div></div>
+         
+
+        <p></p>
+<p>maybe you like :&nbsp;<a href="http://edessin.online/">Printable coloring page, printable drawing page</a></p>
+			<script async="" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/f(8).txt"></script>
+			<ins class="adsbygoogle" style="display: block; height: 388px;" data-ad-format="autorelaxed" data-ad-client="ca-pub-1169273815439326" data-ad-slot="5459826736" data-adsbygoogle-status="done"><ins id="aswift_4_expand" style="display:inline-table;border:none;height:388px;margin:0;padding:0;position:relative;visibility:visible;width:648px;background-color:transparent;"><ins id="aswift_4_anchor" style="display:block;border:none;height:388px;margin:0;padding:0;position:relative;visibility:visible;width:648px;background-color:transparent;"><iframe width="648" height="388" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_4" name="aswift_4" style="left:0;position:absolute;top:0;border:0px;width:648px;height:388px;" __idm_frm__="152" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/saved_resource(9).html"></iframe></ins></ins></ins>
+			<script>
+				 (adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+					</div><!-- .entry-content -->
+
+	
+
+		<footer class="entry-meta">
+
+	    	
+		</footer><!-- .entry-meta -->
+	</div>
+
+	
+</article><!-- #post-## -->
+
+			
+<div id="comments" class="comments-area">
+
+	
+			<h2 class="comments-title">
+			10 thoughts on “<span>Push Notification System with PHP &amp; MySQL</span>”		</h2>
+
+		
+		<ol class="comment-list">
+					<li id="comment-158862" class="comment even thread-even depth-1 parent">
+			<article id="div-comment-158862" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt="" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/4f4b05ff8c7b5548380c508b30def68a.png" srcset="https://secure.gravatar.com/avatar/4f4b05ff8c7b5548380c508b30def68a?s=120&amp;d=mm&amp;r=g 2x" class="avatar avatar-60 photo" height="60" width="60">						<b class="fn">Alex</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://www.phpzag.com/push-notification-system-with-php-mysql/#comment-158862">
+							<time datetime="2018-10-05T06:25:01+00:00">
+								5 October, 2018 at 6:25 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Sorry, the script works but push notification does not appear, what could be the reason?</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-link btn btn-sm btn-default" href="https://www.phpzag.com/push-notification-system-with-php-mysql/?replytocom=158862#respond" data-commentid="158862" data-postid="5852" data-belowelement="div-comment-158862" data-respondelement="respond" aria-label="Reply to Alex" style="display: inline;">Reply</a></div>			</article><!-- .comment-body -->
+		<ol class="children">
+		<li id="comment-158890" class="comment byuser comment-author-phpzag bypostauthor odd alt depth-2 parent">
+			<article id="div-comment-158890" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt="" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/b48bdfd003e219f94ac2079f9a96347f.png" srcset="https://secure.gravatar.com/avatar/b48bdfd003e219f94ac2079f9a96347f?s=120&amp;d=mm&amp;r=g 2x" class="avatar avatar-60 photo" height="60" width="60">						<b class="fn">PHPZAG Team</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://www.phpzag.com/push-notification-system-with-php-mysql/#comment-158890">
+							<time datetime="2018-10-07T05:05:06+00:00">
+								7 October, 2018 at 5:05 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>I have just checked and its working fine.<br>
+When user will visit page, browser ask for notification permissions, if permission allowed then it will start displaying notifications to logged in user. For example in live demo, there a notification created for the username “phpzag”. When user ‘phpzag’ will logged in, notification will be started displaying every 20 seconds. Please check live demo that just added with this tutorial. Thanks!</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-link btn btn-sm btn-default" href="https://www.phpzag.com/push-notification-system-with-php-mysql/?replytocom=158890#respond" data-commentid="158890" data-postid="5852" data-belowelement="div-comment-158890" data-respondelement="respond" aria-label="Reply to PHPZAG Team" style="display: inline;">Reply</a></div>			</article><!-- .comment-body -->
+		<ol class="children">
+		<li id="comment-158916" class="comment even depth-3 parent">
+			<article id="div-comment-158916" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt="" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/4f4b05ff8c7b5548380c508b30def68a.png" srcset="https://secure.gravatar.com/avatar/4f4b05ff8c7b5548380c508b30def68a?s=120&amp;d=mm&amp;r=g 2x" class="avatar avatar-60 photo" height="60" width="60">						<b class="fn">Alex</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://www.phpzag.com/push-notification-system-with-php-mysql/#comment-158916">
+							<time datetime="2018-10-09T08:16:05+00:00">
+								9 October, 2018 at 8:16 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Cool.  Everything works fine. The error was that used the http Protocol, and it is necessary https. Thank you!!!</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-link btn btn-sm btn-default" href="https://www.phpzag.com/push-notification-system-with-php-mysql/?replytocom=158916#respond" data-commentid="158916" data-postid="5852" data-belowelement="div-comment-158916" data-respondelement="respond" aria-label="Reply to Alex" style="display: inline;">Reply</a></div>			</article><!-- .comment-body -->
+		<ol class="children">
+		<li id="comment-158963" class="comment byuser comment-author-phpzag bypostauthor odd alt depth-4">
+			<article id="div-comment-158963" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt="" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/b48bdfd003e219f94ac2079f9a96347f.png" srcset="https://secure.gravatar.com/avatar/b48bdfd003e219f94ac2079f9a96347f?s=120&amp;d=mm&amp;r=g 2x" class="avatar avatar-60 photo" height="60" width="60">						<b class="fn">PHPZAG Team</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://www.phpzag.com/push-notification-system-with-php-mysql/#comment-158963">
+							<time datetime="2018-10-11T18:51:45+00:00">
+								11 October, 2018 at 6:51 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Alex,<br>
+Thanks!</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-link btn btn-sm btn-default" href="https://www.phpzag.com/push-notification-system-with-php-mysql/?replytocom=158963#respond" data-commentid="158963" data-postid="5852" data-belowelement="div-comment-158963" data-respondelement="respond" aria-label="Reply to PHPZAG Team" style="display: inline;">Reply</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+		<li id="comment-158917" class="comment even thread-odd thread-alt depth-1 parent">
+			<article id="div-comment-158917" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt="" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/4f4b05ff8c7b5548380c508b30def68a.png" srcset="https://secure.gravatar.com/avatar/4f4b05ff8c7b5548380c508b30def68a?s=120&amp;d=mm&amp;r=g 2x" class="avatar avatar-60 photo" height="60" width="60">						<b class="fn">Alex</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://www.phpzag.com/push-notification-system-with-php-mysql/#comment-158917">
+							<time datetime="2018-10-09T09:01:18+00:00">
+								9 October, 2018 at 9:01 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Another question is how to alter the script to work on php 7.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-link btn btn-sm btn-default" href="https://www.phpzag.com/push-notification-system-with-php-mysql/?replytocom=158917#respond" data-commentid="158917" data-postid="5852" data-belowelement="div-comment-158917" data-respondelement="respond" aria-label="Reply to Alex" style="display: inline;">Reply</a></div>			</article><!-- .comment-body -->
+		<ol class="children">
+		<li id="comment-159370" class="comment byuser comment-author-phpzag bypostauthor odd alt depth-2">
+			<article id="div-comment-159370" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt="" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/b48bdfd003e219f94ac2079f9a96347f.png" srcset="https://secure.gravatar.com/avatar/b48bdfd003e219f94ac2079f9a96347f?s=120&amp;d=mm&amp;r=g 2x" class="avatar avatar-60 photo" height="60" width="60">						<b class="fn">PHPZAG Team</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://www.phpzag.com/push-notification-system-with-php-mysql/#comment-159370">
+							<time datetime="2018-11-18T06:41:50+00:00">
+								18 November, 2018 at 6:41 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>You can try it, I think it should work on PHP7 without any issue.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-link btn btn-sm btn-default" href="https://www.phpzag.com/push-notification-system-with-php-mysql/?replytocom=159370#respond" data-commentid="159370" data-postid="5852" data-belowelement="div-comment-159370" data-respondelement="respond" aria-label="Reply to PHPZAG Team" style="display: inline;">Reply</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+		<li id="comment-158934" class="comment even thread-even depth-1 parent">
+			<article id="div-comment-158934" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt="" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/228b8037511c70b6b77ef48c0d015b84.png" srcset="https://secure.gravatar.com/avatar/228b8037511c70b6b77ef48c0d015b84?s=120&amp;d=mm&amp;r=g 2x" class="avatar avatar-60 photo" height="60" width="60">						<b class="fn">ajay</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://www.phpzag.com/push-notification-system-with-php-mysql/#comment-158934">
+							<time datetime="2018-10-10T10:37:43+00:00">
+								10 October, 2018 at 10:37 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>i am applying according to you but it showing some erroe in login page<br>
+Notice: Undefined variable: loginError in C:\xampp\htdocs\push_notification\login.php on line 22</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-link btn btn-sm btn-default" href="https://www.phpzag.com/push-notification-system-with-php-mysql/?replytocom=158934#respond" data-commentid="158934" data-postid="5852" data-belowelement="div-comment-158934" data-respondelement="respond" aria-label="Reply to ajay" style="display: inline;">Reply</a></div>			</article><!-- .comment-body -->
+		<ol class="children">
+		<li id="comment-159369" class="comment byuser comment-author-phpzag bypostauthor odd alt depth-2">
+			<article id="div-comment-159369" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt="" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/b48bdfd003e219f94ac2079f9a96347f.png" srcset="https://secure.gravatar.com/avatar/b48bdfd003e219f94ac2079f9a96347f?s=120&amp;d=mm&amp;r=g 2x" class="avatar avatar-60 photo" height="60" width="60">						<b class="fn">PHPZAG Team</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://www.phpzag.com/push-notification-system-with-php-mysql/#comment-159369">
+							<time datetime="2018-11-18T06:40:44+00:00">
+								18 November, 2018 at 6:40 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Please download complete script, may be missing its initialization at the top of page to display error if any. Thanks1</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-link btn btn-sm btn-default" href="https://www.phpzag.com/push-notification-system-with-php-mysql/?replytocom=159369#respond" data-commentid="159369" data-postid="5852" data-belowelement="div-comment-159369" data-respondelement="respond" aria-label="Reply to PHPZAG Team" style="display: inline;">Reply</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+		<li id="comment-160506" class="comment even thread-odd thread-alt depth-1 parent">
+			<article id="div-comment-160506" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt="" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/99786c24dde431ef9f584ddb910f37b3.jpeg" srcset="https://secure.gravatar.com/avatar/99786c24dde431ef9f584ddb910f37b3?s=120&amp;d=mm&amp;r=g 2x" class="avatar avatar-60 photo" height="60" width="60">						<b class="fn">Michael Parisi</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://www.phpzag.com/push-notification-system-with-php-mysql/#comment-160506">
+							<time datetime="2019-05-02T15:06:08+00:00">
+								2 May, 2019 at 3:06 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>The code is insecure and is not properly using MySQLi.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-link btn btn-sm btn-default" href="https://www.phpzag.com/push-notification-system-with-php-mysql/?replytocom=160506#respond" data-commentid="160506" data-postid="5852" data-belowelement="div-comment-160506" data-respondelement="respond" aria-label="Reply to Michael Parisi" style="display: inline;">Reply</a></div>			</article><!-- .comment-body -->
+		<ol class="children">
+		<li id="comment-160610" class="comment byuser comment-author-phpzag bypostauthor odd alt depth-2">
+			<article id="div-comment-160610" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt="" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/b48bdfd003e219f94ac2079f9a96347f.png" srcset="https://secure.gravatar.com/avatar/b48bdfd003e219f94ac2079f9a96347f?s=120&amp;d=mm&amp;r=g 2x" class="avatar avatar-60 photo" height="60" width="60">						<b class="fn">PHPZAG Team</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://www.phpzag.com/push-notification-system-with-php-mysql/#comment-160610">
+							<time datetime="2019-05-11T08:36:38+00:00">
+								11 May, 2019 at 8:36 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Thanks for suggestion, I will try to update to make it more secure.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-link btn btn-sm btn-default" href="https://www.phpzag.com/push-notification-system-with-php-mysql/?replytocom=160610#respond" data-commentid="160610" data-postid="5852" data-belowelement="div-comment-160610" data-respondelement="respond" aria-label="Reply to PHPZAG Team" style="display: inline;">Reply</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+		</ol><!-- .comment-list -->
+
+		
+	
+	
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="https://www.phpzag.com/push-notification-system-with-php-mysql/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="https://www.phpzag.com/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate="">
+				<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required="required"></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required="required"></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200"></p>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"><label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit btn btn-default" value="Post Comment" style="display: inline-block;"> <input type="hidden" name="comment_post_ID" value="5852" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="47f4e7c066"></p><p style="display: none;"></p>			<input type="hidden" id="ak_js" name="ak_js" value="1558639885099"></form>
+			</div><!-- #respond -->
+	
+</div><!-- #comments -->
+				<nav class="navigation post-navigation" role="navigation">
+		<h1 class="screen-reader-text">Post navigation</h1>
+		<div class="nav-links">
+			<div class="nav-previous"><a href="https://www.phpzag.com/star-rating-system-with-ajax-php-and-mysql/" rel="prev"><i class="fa fa-chevron-left"></i> Star Rating System with Ajax, PHP and MySQL</a></div><div class="nav-next"><a href="https://www.phpzag.com/generate-user-initial-avatar-with-php-mysql/" rel="next">Generate User Initial Avatar with PHP &amp; MySQL <i class="fa fa-chevron-right"></i></a></div>		</div><!-- .nav-links -->
+	</nav><!-- .navigation -->
+	
+		
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+</div>
+	<div id="secondary" class="widget-area col-sm-12 col-md-4" role="complementary">
+		<div class="well">		
+						
+			
+			<aside id="custom_html-2" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><br>
+<div class="subscribe_section">
+<div class="subscribe_text">
+Subscribe my updates via <b>Email </b>
+</div><div>
+<form action="https://feedburner.google.com/fb/a/mailverify" method="post">
+<input class="feedinput" id="femail" name="email" type="text" placeholder="Enter Your Email">
+<input name="uri" type="hidden" value="phpzag"><input name="loc" type="hidden" value="en_US">
+<input type="submit" class="subscribe_button btn btn-default" value="Subscribe "></form>
+</div>
+<div class="readers_count">
+<div>
+<a href="https://feeds.feedburner.com/phpzag" title="phpzag feed"><img id="fcount" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/phpzag" height="36" width="88" style="border:1" alt=""></a>
+</div>
+</div>
+<div class="clearboth"></div>
+</div>
+
+<br>
+
+<script async="" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/f(8).txt"></script>
+<!-- Responsive Ads2 -->
+<ins class="adsbygoogle" style="display: block; height: 280px;" data-ad-client="ca-pub-1169273815439326" data-ad-slot="4814073657" data-ad-format="auto" data-full-width-responsive="true" data-adsbygoogle-status="done"><ins id="aswift_5_expand" style="display:inline-table;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:338px;background-color:transparent;"><ins id="aswift_5_anchor" style="display:block;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:338px;background-color:transparent;"><iframe width="338" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_5" name="aswift_5" style="left:0;position:absolute;top:0;border:0px;width:338px;height:280px;" __idm_frm__="153" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/saved_resource(10).html"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div></aside><aside id="sparkling_popular_posts-2" class="widget sparkling-popular-posts"><h3 class="widget-title">Trending Tutorials</h3>
+
+
+    <!-- popular posts -->
+
+          <div class="popular-posts-wrapper">
+
+
+
+                
+
+
+                        
+
+
+                        <!-- post -->
+
+                        <div class="post">
+
+
+
+                          <!-- image -->
+
+                          <div class="post-image ">
+
+
+
+                                <a href="https://www.phpzag.com/image-upload-and-crop-in-modal-with-php-and-jquery/"><img width="60" height="60" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/image-upload-crop-60x60.png" class="attachment-tab-small size-tab-small wp-post-image" alt="" srcset="https://www.phpzag.com/wp-content/uploads/2016/07/image-upload-crop-60x60.png 60w, https://www.phpzag.com/wp-content/uploads/2016/07/image-upload-crop-150x150.png 150w" sizes="(max-width: 60px) 100vw, 60px"></a>
+
+
+
+                          </div> <!-- end post image -->
+
+
+
+                          <!-- content -->
+
+                          <div class="post-content">
+
+
+
+                              <a href="https://www.phpzag.com/image-upload-and-crop-in-modal-with-php-and-jquery/">Image Upload and Crop in Modal with PHP and jQuery</a>
+																 <span class="date">Last Updated: 12 Jan , 2019</span>
+								                             
+
+
+
+
+
+                          </div><!-- end content -->
+
+                        </div><!-- end post -->
+
+
+
+                        
+
+
+                    
+
+
+                        
+
+
+                        <!-- post -->
+
+                        <div class="post">
+
+
+
+                          <!-- image -->
+
+                          <div class="post-image ">
+
+
+
+                                <a href="https://www.phpzag.com/php-youtube-video-downloader-script/"><img width="60" height="60" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/youtube-video-download-60x60.png" class="attachment-tab-small size-tab-small wp-post-image" alt=""></a>
+
+
+
+                          </div> <!-- end post image -->
+
+
+
+                          <!-- content -->
+
+                          <div class="post-content">
+
+
+
+                              <a href="https://www.phpzag.com/php-youtube-video-downloader-script/">YouTube Video Downloader Script in PHP</a>
+																 <span class="date">Last Updated: 07 Jan , 2019</span>
+								                             
+
+
+
+
+
+                          </div><!-- end content -->
+
+                        </div><!-- end post -->
+
+
+
+                        
+
+
+                    
+
+
+                        
+
+
+                        <!-- post -->
+
+                        <div class="post">
+
+
+
+                          <!-- image -->
+
+                          <div class="post-image ">
+
+
+
+                                <a href="https://www.phpzag.com/convert-currency-using-google-api/"><img width="60" height="60" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/currency-conversion-using-google-api-60x60.png" class="attachment-tab-small size-tab-small wp-post-image" alt="" srcset="https://www.phpzag.com/wp-content/uploads/2016/08/currency-conversion-using-google-api-60x60.png 60w, https://www.phpzag.com/wp-content/uploads/2016/08/currency-conversion-using-google-api-150x150.png 150w" sizes="(max-width: 60px) 100vw, 60px"></a>
+
+
+
+                          </div> <!-- end post image -->
+
+
+
+                          <!-- content -->
+
+                          <div class="post-content">
+
+
+
+                              <a href="https://www.phpzag.com/convert-currency-using-google-api/">Build Currency Converter with PHP</a>
+																 <span class="date">Last Updated: 07 Jan , 2019</span>
+								                             
+
+
+
+
+
+                          </div><!-- end content -->
+
+                        </div><!-- end post -->
+
+
+
+                        
+
+
+                    
+
+
+                        
+
+
+                        <!-- post -->
+
+                        <div class="post">
+
+
+
+                          <!-- image -->
+
+                          <div class="post-image ">
+
+
+
+                                <a href="https://www.phpzag.com/paytm-payment-gateway-integration-in-php/"><img width="60" height="60" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/paytm-payment-gatways-60x60.jpg" class="attachment-tab-small size-tab-small wp-post-image" alt="" srcset="https://www.phpzag.com/wp-content/uploads/2016/10/paytm-payment-gatways-60x60.jpg 60w, https://www.phpzag.com/wp-content/uploads/2016/10/paytm-payment-gatways-150x150.jpg 150w" sizes="(max-width: 60px) 100vw, 60px"></a>
+
+
+
+                          </div> <!-- end post image -->
+
+
+
+                          <!-- content -->
+
+                          <div class="post-content">
+
+
+
+                              <a href="https://www.phpzag.com/paytm-payment-gateway-integration-in-php/">Paytm Payment Gateway Integration in PHP</a>
+																 <span class="date">Last Updated: 19 Jul , 2018</span>
+								                             
+
+
+
+
+
+                          </div><!-- end content -->
+
+                        </div><!-- end post -->
+
+
+
+                        
+
+
+                    
+
+
+                        
+
+
+                        <!-- post -->
+
+                        <div class="post">
+
+
+
+                          <!-- image -->
+
+                          <div class="post-image ">
+
+
+
+                                <a href="https://www.phpzag.com/delete-records-with-bootstrap-confirm-modal-using-php-mysql/"><img width="60" height="60" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/Delete-Records-with-Bootstrap-Confirm-Modal-using-PHP-MySQL-60x60.png" class="attachment-tab-small size-tab-small wp-post-image" alt="" srcset="https://www.phpzag.com/wp-content/uploads/2017/01/Delete-Records-with-Bootstrap-Confirm-Modal-using-PHP-MySQL-60x60.png 60w, https://www.phpzag.com/wp-content/uploads/2017/01/Delete-Records-with-Bootstrap-Confirm-Modal-using-PHP-MySQL-150x150.png 150w" sizes="(max-width: 60px) 100vw, 60px"></a>
+
+
+
+                          </div> <!-- end post image -->
+
+
+
+                          <!-- content -->
+
+                          <div class="post-content">
+
+
+
+                              <a href="https://www.phpzag.com/delete-records-with-bootstrap-confirm-modal-using-php-mysql/">Delete Records with Bootstrap Confirm Modal using PHP &amp; MySQL</a>
+																 <span class="date">Last Updated: 21 Apr , 2018</span>
+								                             
+
+
+
+
+
+                          </div><!-- end content -->
+
+                        </div><!-- end post -->
+
+
+
+                        
+
+
+                    
+
+
+                        
+
+
+                        <!-- post -->
+
+                        <div class="post">
+
+
+
+                          <!-- image -->
+
+                          <div class="post-image ">
+
+
+
+                                <a href="https://www.phpzag.com/build-invoice-system-with-php-mysql/"><img width="60" height="60" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/Invoice-System-with-PHP-MySQL-min-60x60.png" class="attachment-tab-small size-tab-small wp-post-image" alt="" srcset="https://www.phpzag.com/wp-content/uploads/2019/01/Invoice-System-with-PHP-MySQL-min-60x60.png 60w, https://www.phpzag.com/wp-content/uploads/2019/01/Invoice-System-with-PHP-MySQL-min-150x150.png 150w" sizes="(max-width: 60px) 100vw, 60px"></a>
+
+
+
+                          </div> <!-- end post image -->
+
+
+
+                          <!-- content -->
+
+                          <div class="post-content">
+
+
+
+                              <a href="https://www.phpzag.com/build-invoice-system-with-php-mysql/">Build Invoice System with PHP &amp; MySQL</a>
+																 <span class="date">Last Updated: 13 Jan , 2019</span>
+								                             
+
+
+
+
+
+                          </div><!-- end content -->
+
+                        </div><!-- end post -->
+
+
+
+                        
+
+
+                    
+
+
+          </div> <!-- end posts wrapper -->
+
+
+
+		</aside><aside id="tag_cloud-4" class="widget widget_tag_cloud"><h3 class="widget-title">Popular Search Tags</h3><div class="tagcloud" style="display: block;"><a href="https://www.phpzag.com/category/tutorials/angularjs/" class="tag-cloud-link tag-link-438 tag-link-position-1" style="font-size: 10.346368715084pt;" aria-label="AngularJS (3 items)">AngularJS</a>
+<a href="https://www.phpzag.com/category/articles/" class="tag-cloud-link tag-link-123 tag-link-position-2" style="font-size: 9.4078212290503pt;" aria-label="Articles (2 items)">Articles</a>
+<a href="https://www.phpzag.com/category/snippets/" class="tag-cloud-link tag-link-424 tag-link-position-3" style="font-size: 11.128491620112pt;" aria-label="Code Snippets (4 items)">Code Snippets</a>
+<a href="https://www.phpzag.com/category/tutorials/html5-tutorial/" class="tag-cloud-link tag-link-107 tag-link-position-4" style="font-size: 8pt;" aria-label="HTML5 (1 item)">HTML5</a>
+<a href="https://www.phpzag.com/category/interview-questions/" class="tag-cloud-link tag-link-61 tag-link-position-5" style="font-size: 14.100558659218pt;" aria-label="Interview Questions (11 items)">Interview Questions</a>
+<a href="https://www.phpzag.com/category/tutorials/javascript-2/" class="tag-cloud-link tag-link-164 tag-link-position-6" style="font-size: 9.4078212290503pt;" aria-label="Javascript (2 items)">Javascript</a>
+<a href="https://www.phpzag.com/category/tutorials/jquery/" class="tag-cloud-link tag-link-82 tag-link-position-7" style="font-size: 15.664804469274pt;" aria-label="JQuery (18 items)">JQuery</a>
+<a href="https://www.phpzag.com/category/tutorials/laravel/" class="tag-cloud-link tag-link-440 tag-link-position-8" style="font-size: 8pt;" aria-label="Laravel (1 item)">Laravel</a>
+<a href="https://www.phpzag.com/category/tutorials/magento/" class="tag-cloud-link tag-link-86 tag-link-position-9" style="font-size: 13.083798882682pt;" aria-label="Magento (8 items)">Magento</a>
+<a href="https://www.phpzag.com/category/tutorials/mysql/" class="tag-cloud-link tag-link-55 tag-link-position-10" style="font-size: 9.4078212290503pt;" aria-label="MYSQL (2 items)">MYSQL</a>
+<a href="https://www.phpzag.com/category/tutorials/payment-gateways/" class="tag-cloud-link tag-link-439 tag-link-position-11" style="font-size: 13.474860335196pt;" aria-label="Payment Gateways (9 items)">Payment Gateways</a>
+<a href="https://www.phpzag.com/category/tutorials/php-tutorial-2/" class="tag-cloud-link tag-link-54 tag-link-position-12" style="font-size: 22pt;" aria-label="PHP (122 items)">PHP</a>
+<a href="https://www.phpzag.com/category/tutorials/" class="tag-cloud-link tag-link-441 tag-link-position-13" style="font-size: 11.754189944134pt;" aria-label="Tutorials (5 items)">Tutorials</a>
+<a href="https://www.phpzag.com/category/tutorials/wordpress/" class="tag-cloud-link tag-link-151 tag-link-position-14" style="font-size: 8pt;" aria-label="Wordpress (1 item)">Wordpress</a></div>
+</aside>			<script async="" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/f(8).txt"></script>			<!-- Responsive Ads2 -->			<ins class="adsbygoogle" style="display: block; height: 280px;" data-ad-client="ca-pub-1169273815439326" data-ad-slot="4814073657" data-ad-format="auto" data-full-width-responsive="true" data-adsbygoogle-status="done"><ins id="aswift_6_expand" style="display:inline-table;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:338px;background-color:transparent;"><ins id="aswift_6_anchor" style="display:block;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:338px;background-color:transparent;"><iframe width="338" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_6" name="aswift_6" style="left:0;position:absolute;top:0;border:0px;width:338px;height:280px;" __idm_frm__="157" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/saved_resource(11).html"></iframe></ins></ins></ins>			<script>			(adsbygoogle = window.adsbygoogle || []).push({});			</script>
+		</div>		
+		
+		
+
+		
+	</div><!-- #secondary -->
+		</div><!-- close .row -->
+	</div><!-- close .container -->
+</div><!-- close .site-content -->
+
+	<div id="footer-area">
+		<div class="container footer-inner">
+			<div class="row">
+				
+	
+	<div class="footer-widget-area">
+				<div class="col-sm-4 footer-widget" role="complementary">
+					<div id="recent-posts-6" class="widget widget_recent_entries">		<h3 class="widgettitle">Latest Tutorials</h3>		<ul>
+											<li>
+					<a href="https://www.phpzag.com/build-inventory-system-with-ajax-php-mysql/">Build Inventory System with Ajax, PHP &amp; MySQL</a>
+											<span class="post-date">18 April, 2019</span>
+									</li>
+											<li>
+					<a href="https://www.phpzag.com/product-filter-search-with-ajax-php-mysql/">Product Filter Search with Ajax, PHP &amp; MySQL</a>
+											<span class="post-date">9 February, 2019</span>
+									</li>
+											<li>
+					<a href="https://www.phpzag.com/build-invoice-system-with-php-mysql/">Build Invoice System with PHP &amp; MySQL</a>
+											<span class="post-date">13 January, 2019</span>
+									</li>
+											<li>
+					<a href="https://www.phpzag.com/live-data-search-with-multiselect-dropdown-using-ajax-php-mysql/">Live Data Search with Multiselect Dropdown using Ajax, PHP &amp; MySQL</a>
+											<span class="post-date">30 December, 2018</span>
+									</li>
+											<li>
+					<a href="https://www.phpzag.com/build-live-chat-system-with-ajax-php-mysql/">Build Live Chat System with Ajax, PHP &amp; MySQL</a>
+											<span class="post-date">9 December, 2018</span>
+									</li>
+					</ul>
+		</div>		</div><!-- .widget-area .first -->
+		
+				<div class="col-sm-4 footer-widget" role="complementary">
+			<div id="tag_cloud-3" class="widget widget_tag_cloud"><h3 class="widgettitle">Popular Tags</h3><div class="tagcloud" style="display: block;"><a href="https://www.phpzag.com/category/tutorials/angularjs/" class="tag-cloud-link tag-link-438 tag-link-position-1" style="font-size: 10.346368715084pt;" aria-label="AngularJS (3 items)">AngularJS</a>
+<a href="https://www.phpzag.com/category/articles/" class="tag-cloud-link tag-link-123 tag-link-position-2" style="font-size: 9.4078212290503pt;" aria-label="Articles (2 items)">Articles</a>
+<a href="https://www.phpzag.com/category/snippets/" class="tag-cloud-link tag-link-424 tag-link-position-3" style="font-size: 11.128491620112pt;" aria-label="Code Snippets (4 items)">Code Snippets</a>
+<a href="https://www.phpzag.com/category/tutorials/html5-tutorial/" class="tag-cloud-link tag-link-107 tag-link-position-4" style="font-size: 8pt;" aria-label="HTML5 (1 item)">HTML5</a>
+<a href="https://www.phpzag.com/category/interview-questions/" class="tag-cloud-link tag-link-61 tag-link-position-5" style="font-size: 14.100558659218pt;" aria-label="Interview Questions (11 items)">Interview Questions</a>
+<a href="https://www.phpzag.com/category/tutorials/javascript-2/" class="tag-cloud-link tag-link-164 tag-link-position-6" style="font-size: 9.4078212290503pt;" aria-label="Javascript (2 items)">Javascript</a>
+<a href="https://www.phpzag.com/category/tutorials/jquery/" class="tag-cloud-link tag-link-82 tag-link-position-7" style="font-size: 15.664804469274pt;" aria-label="JQuery (18 items)">JQuery</a>
+<a href="https://www.phpzag.com/category/tutorials/laravel/" class="tag-cloud-link tag-link-440 tag-link-position-8" style="font-size: 8pt;" aria-label="Laravel (1 item)">Laravel</a>
+<a href="https://www.phpzag.com/category/tutorials/magento/" class="tag-cloud-link tag-link-86 tag-link-position-9" style="font-size: 13.083798882682pt;" aria-label="Magento (8 items)">Magento</a>
+<a href="https://www.phpzag.com/category/tutorials/mysql/" class="tag-cloud-link tag-link-55 tag-link-position-10" style="font-size: 9.4078212290503pt;" aria-label="MYSQL (2 items)">MYSQL</a>
+<a href="https://www.phpzag.com/category/tutorials/payment-gateways/" class="tag-cloud-link tag-link-439 tag-link-position-11" style="font-size: 13.474860335196pt;" aria-label="Payment Gateways (9 items)">Payment Gateways</a>
+<a href="https://www.phpzag.com/category/tutorials/php-tutorial-2/" class="tag-cloud-link tag-link-54 tag-link-position-12" style="font-size: 22pt;" aria-label="PHP (122 items)">PHP</a>
+<a href="https://www.phpzag.com/category/tutorials/" class="tag-cloud-link tag-link-441 tag-link-position-13" style="font-size: 11.754189944134pt;" aria-label="Tutorials (5 items)">Tutorials</a>
+<a href="https://www.phpzag.com/category/tutorials/wordpress/" class="tag-cloud-link tag-link-151 tag-link-position-14" style="font-size: 8pt;" aria-label="Wordpress (1 item)">Wordpress</a></div>
+</div>		</div><!-- .widget-area .second -->
+		
+				<div class="col-sm-4 footer-widget" role="complementary">
+			<div id="sparkling-social-3" class="widget sparkling-social"><h3 class="widgettitle"></h3>
+        <!-- social icons -->
+        <div class="social-icons sticky-sidebar-social">
+
+            <nav id="menu-social" class="social-icons"><ul id="menu-social-items" class="social-menu"><li id="menu-item-3644" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3644"><a href="https://www.facebook.com/Phpzag-203097989797749/"><i class="social_icon fa"><span>Facebook</span></i></a></li>
+<li id="menu-item-3645" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3645"><a href="https://twitter.com/phpzag"><i class="social_icon fa"><span>Twitter</span></i></a></li>
+<li id="menu-item-3646" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3646"><a href="https://plus.google.com/112450781644946967938/posts"><i class="social_icon fa"><span>Google Plus</span></i></a></li>
+<li id="menu-item-3647" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3647"><a href="http://feeds.feedburner.com/phpzag/"><i class="social_icon fa"><span>Feed</span></i></a></li>
+</ul></nav>
+        </div><!-- end social icons --></div>		</div><!-- .widget-area .third -->
+			</div>			</div>
+			
+	<br>
+		</div>
+
+		<footer id="colophon" class="site-footer" role="contentinfo">
+			<div class="site-info container">
+				<div class="row">
+										<nav role="navigation" class="col-md-6">
+											</nav>
+					<div class="copyright col-md-6">
+						Copyright © 2011 - 2019  <a href="https://www.phpzag.com/" title="PHPZAG.COM">PHPZAG.COM</a>  All rights reserved. |  <a href="https://www.phpzag.com/about" title="Advertise">About</a> | <a href="https://www.phpzag.com/contact" title="Advertise">Contact</a> | <a href="https://www.phpzag.com/advertise" title="Advertise">Advertise</a>											</div>
+				</div>
+			</div><!-- .site-info -->
+			<div class="scroll-to-top" style="display: block;"><i class="fa fa-angle-up"></i></div><!-- .scroll-to-top -->
+		</footer><!-- #colophon -->
+	</div>
+</div><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><ins id="aswift_0_anchor" style="display:block;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><iframe frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0px;width:0px;height:0px;" __idm_frm__="143" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/saved_resource(12).html"></iframe></ins></ins></ins><iframe id="google_osd_static_frame_1930960650634" name="google_osd_static_frame" __idm_frm__="156" style="display: none; width: 0px; height: 0px;" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/saved_resource(13).html"></iframe><!-- #page -->
+
+  <div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/xd_arbiter.html" style="border: none;" __idm_frm__="159"></iframe></div><div><iframe name="f30c3db9a5fccfc" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/ping.html" style="display: none;" __idm_frm__="164"></iframe></div></div></div><script type="text/javascript">
+    jQuery( document ).ready( function( $ ){
+      if ( $( window ).width() >= 767 ){
+        $( '.navbar-nav > li.menu-item > a' ).click( function(){
+          window.location = $( this ).attr( 'href' );
+        });
+      }
+    });
+  </script>
+        <!-- 
+            Lockers: user tracker for visibility filters
+            OnePress, bizpanda.com
+        -->
+        <script>
+            window.__bp_session_timeout = '900';
+            window.__bp_session_freezing = 0;
+            window.bizpanda||(window.bizpanda={}),window.bizpanda.bp_can_store_localy=function(){return!1},window.bizpanda.bp_ut_get_cookie=function(e){for(var n=e+"=",i=document.cookie.split(";"),o=0;o<i.length;o++){for(var t=i[o];" "==t.charAt(0);)t=t.substring(1);if(0==t.indexOf(n))return decodeURIComponent(t.substring(n.length,t.length))}return!1},window.bizpanda.bp_ut_set_cookie=function(e,n,i){var o=new Date;o.setTime(o.getTime()+24*i*60*60*1e3);var t="expires="+o.toUTCString();document.cookie=e+"="+encodeURIComponent(n)+"; "+t+"; path=/"},window.bizpanda.bp_ut_get_obj=function(e){var n=null;if(!(n=window.bizpanda.bp_can_store_localy()?window.localStorage.getItem("bp_ut_session"):window.bizpanda.bp_ut_get_cookie("bp_ut_session")))return!1;n=(n=n.replace(/\-c\-/g,",")).replace(/\-q\-/g,'"');try{n=JSON.parse(n)}catch(e){return!1}return n.started+1e3*e<(new Date).getTime()&&(n=null),n},window.bizpanda.bp_ut_set_obj=function(e,n){e.started&&window.__bp_session_freezing||(e.started=(new Date).getTime()),(e=JSON.stringify(e))&&(e=(e=e.replace(/\"/g,"-q-")).replace(/\,/g,"-c-")),window.bizpanda.bp_can_store_localy()?window.localStorage.setItem("bp_ut_session",e):window.bizpanda.bp_ut_set_cookie("bp_ut_session",e,5e3)},window.bizpanda.bp_ut_count_pageview=function(){var e=window.bizpanda.bp_ut_get_obj(window.__bp_session_timeout);e||(e={}),e.pageviews||(e.pageviews=0),0===e.pageviews&&(e.referrer=document.referrer,e.landingPage=window.location.href,e.pageviews=0),e.pageviews++,window.bizpanda.bp_ut_set_obj(e)},window.bizpanda.bp_ut_count_locker_pageview=function(){var e=window.bizpanda.bp_ut_get_obj(window.__bp_timeout);e||(e={}),e.lockerPageviews||(e.lockerPageviews=0),e.lockerPageviews++,window.bizpanda.bp_ut_set_obj(e)},window.bizpanda.bp_ut_count_pageview();
+        </script>
+        <!-- / -->
+                    <script>
+            if ( !window.bizpanda ) window.bizpanda = {};
+            if ( !window.bizpanda.lockerOptions ) window.bizpanda.lockerOptions = {};
+            window.bizpanda.lockerOptions['onpLock666311'] = {"lockerId":"4115","tracking":"true","postId":5852,"ajaxUrl":"https:\/\/www.phpzag.com\/wp-admin\/admin-ajax.php","options":{"demo":false,"actualUrls":false,"text":{"header":"Download Code is Locked","message":"Please support us, use one of the buttons below to unlock the content."},"theme":"secrets","lang":"en_US","agreement":{"termsUrl":"https:\/\/www.phpzag.com?bizpanda=terms-of-use","privacyPolicyUrl":"https:\/\/www.phpzag.com?bizpanda=privacy-policy","showInPopup":{"width":570,"height":400}},"overlap":{"mode":"full","position":"middle","altMode":"transparence"},"highlight":1,"googleAnalytics":1,"locker":{"counter":1,"loadingTimeout":20000,"tumbler":false,"naMode":"show-error","inAppBrowsers":"visible_with_warning","inAppBrowsersWarning":"You are viewing this page in the {browser}. The locker may work incorrectly in this browser. Please open this page in a standard browser."},"proxy":"https:\/\/www.phpzag.com\/wp-admin\/admin-ajax.php?action=opanda_connect","groups":["social-buttons"],"socialButtons":{"counters":1,"order":["facebook-like","twitter-tweet","google-plus"],"behaviorOnError":"show_error","behaviorError":"Unable to create social buttons. Please make sure that nothing blocks loading of social scripts in your browser. Some browser extentions (Avast, PrivDog, AdBlock, Adguard etc.) or usage of private tabs in FireFox may cause this issue. Turn them off and try again.","facebook":{"appId":"117100935120196","lang":"en_US","version":"v2.5","like":{"url":"https:\/\/www.phpzag.com\/push-notification-system-with-php-mysql\/","title":"like","theConfirmIssue":0}},"twitter":{"lang":"en","tweet":{"url":"https:\/\/www.phpzag.com\/push-notification-system-with-php-mysql\/","doubleCheck":0,"title":"tweet"}},"google":{"lang":"en","plus":{"url":"https:\/\/www.phpzag.com\/push-notification-system-with-php-mysql\/","title":"+1 us"}}},"lazy":false},"_theme":"secrets","_style":null,"ajax":false,"stats":true};
+        </script>
+            <script type="text/javascript" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/effect.min.js.téléchargement"></script>
+<script type="text/javascript" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/effect-highlight.min.js.téléchargement"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var facebookSDK = {"appId":"117100935120196","lang":"en_US"};
+var __pandalockers = {"lang":[],"postId":"5852","visibility":[],"managedInitHook":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/lockers.020307.min.js.téléchargement"></script>
+<script type="text/javascript" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/skip-link-focus-fix.js.téléchargement"></script>
+<script type="text/javascript" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/comment-reply.min.js.téléchargement"></script>
+<script type="text/javascript" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/wp-embed.min.js.téléchargement"></script>
+<script async="async" type="text/javascript" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/form.js.téléchargement"></script>
+ 
+        <!--
+            Lockers: script checks if the locker assets were successfully loaded and creates lockers.
+            OnePress, bizpanda.com
+        -->
+        <script>
+            (function($){ if ( window.bizpanda && window.bizpanda.initLockers ) { window.bizpanda.initLockers(); } })(jQuery); (function($){ $(function(){ if ( window.bizpanda && window.bizpanda.initLockers ) return; $.getScript( "https://www.phpzag.com?b3ad0d7ee=2d2411", function() { if ( window.bizpanda && window.bizpanda.initLockers ) window.bizpanda.initLockers(); }); }); })(jQuery);
+        </script><script type="text/javascript" id="twitter-wjs" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/widgets.js.téléchargement"></script>
+         
+        
+<script>
+$(document).ready(function() {
+      $('code').addClass('prettyprint');
+        $.getScript( "https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js", function( data, textStatus, jqxhr ) {
+           //console.log("prettified");
+           });
+});
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-49752503-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<iframe scrolling="no" frameborder="0" allowtransparency="true" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/widget_iframe.fb066ff7f5f4afee7716887031da2ea8.html" title="Twitter settings iframe" style="display: none;"></iframe></body><iframe id="google_shimpl" __idm_frm__="142" style="display: none;" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/saved_resource(14).html"></iframe><iframe id="google_esf" name="google_esf" src="./Push Notification System with PHP &amp; MySQL – PHPZAG.COM_files/zrt_lookup.html" data-ad-client="ca-pub-1169273815439326" style="display: none;"></iframe></html>
